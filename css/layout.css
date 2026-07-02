@@ -1,0 +1,118 @@
+/* ============================================
+   Layout — container, main, sections, grid
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.site-main {
+  flex: 1;
+  padding-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.site-main--flush {
+  padding-top: 0;
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-lg);
+}
+
+.section-header p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  margin-top: var(--space-sm);
+}
+
+/* —— Responsive grid system —— */
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+.grid--gap-sm {
+  gap: var(--space-md);
+}
+
+.grid--gap-lg {
+  gap: var(--space-xl);
+}
+
+.grid--1 {
+  grid-template-columns: 1fr;
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Named layout patterns (alias existing page grids) */
+.tour-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--grid-gap);
+}
+
+@media (min-width: 600px) {
+  .tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .tour-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

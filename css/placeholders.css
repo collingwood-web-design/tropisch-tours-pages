@@ -1,0 +1,93 @@
+/* ============================================
+   Image placeholder system
+   Use until final photography is supplied.
+   ============================================ */
+
+/**
+ * Base placeholder block
+ * - Always include role="img" and aria-label on the element
+ * - Replace with <img> inside .media-frame when assets are ready
+ */
+.placeholder-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-light) 0%,
+    var(--color-primary) 100%
+  );
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: var(--space-sm);
+  min-height: 12.5rem;
+}
+
+/* Aspect ratio wrappers */
+.media-frame {
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
+
+.media-frame--4x3 {
+  aspect-ratio: 4 / 3;
+}
+
+.media-frame--16x9 {
+  aspect-ratio: 16 / 9;
+}
+
+.media-frame--3x4 {
+  aspect-ratio: 3 / 4;
+}
+
+.media-frame--square {
+  aspect-ratio: 1 / 1;
+}
+
+.media-frame .placeholder-img,
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder variants */
+.placeholder-img--light {
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, #ebe6df 100%);
+  color: var(--color-text-muted);
+}
+
+.placeholder-img--hero {
+  min-height: 100%;
+  background: linear-gradient(
+    160deg,
+    #5c4a32 0%,
+    var(--color-primary-light) 35%,
+    var(--color-primary) 70%,
+    #142820 100%
+  );
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.placeholder-img--coastal {
+  background: linear-gradient(
+    145deg,
+    #3d6b7a 0%,
+    var(--color-primary-light) 50%,
+    var(--color-primary) 100%
+  );
+}
+
+.placeholder-img--surface {
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+}

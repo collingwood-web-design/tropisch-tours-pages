@@ -1,0 +1,78 @@
+/* ============================================
+   Design tokens — provisional colours & fonts
+   See DESIGN.md. Update :root when brand is finalised.
+   ============================================ */
+
+:root {
+  /* —— Colour placeholders —— */
+  --color-bg: #fcfaf7;
+  --color-bg-alt: #f5f2ed;
+  --color-surface: #ffffff;
+  --color-forest: #1e3a2f;
+  --color-forest-light: #2d5244;
+  --color-gold: #b8956c;
+  --color-gold-light: #d4b896;
+  --color-text: #2c2824;
+  --color-text-muted: #6e6760;
+  --color-white: #ffffff;
+  --color-border: rgba(30, 58, 47, 0.12);
+  --color-overlay: rgba(30, 58, 47, 0.55);
+  --color-focus: var(--color-gold);
+  --color-icon-highlight: #e67520;
+  --logo-color: var(--color-primary);
+  --color-success: var(--color-forest);
+  --color-error: #8b3a3a;
+
+  /* Semantic aliases (locked roles) */
+  --color-primary: var(--color-forest);
+  --color-primary-light: var(--color-forest-light);
+  --color-accent: var(--color-gold);
+  --color-accent-light: var(--color-gold-light);
+  --color-on-primary: var(--color-white);
+  --color-header-bg: rgba(252, 250, 247, 0.95);
+
+  /* —— Typography placeholders —— */
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-display);
+  --font-sans: var(--font-body);
+
+  /* —— Spacing (locked) —— */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* —— Layout (locked) —— */
+  --max-width: 1200px;
+  --header-contact-height: 0px;
+  --header-main-height: 88px;
+  --header-height: calc(var(--header-contact-height) + var(--header-main-height));
+  --transition: 0.3s ease;
+
+  /* —— Breakpoints (reference — use in @media) —— */
+  /* sm: 600px | md: 768px | lg: 900px | xl: 1024px */
+
+  /* —— Grid —— */
+  --grid-gap: var(--space-lg);
+}
+
+@media (min-width: 600px) {
+  :root {
+    --header-contact-height: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-main-height: 112px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-main-height: 120px;
+  }
+}
