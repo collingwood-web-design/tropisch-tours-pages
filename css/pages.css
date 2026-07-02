@@ -421,14 +421,10 @@
   overflow: hidden;
 }
 
-/* —— Booking widget (homepage hero placeholder) —— */
-.hero__booking {
-  z-index: 3;
-  width: 100%;
-}
-
-.hero__booking .container {
-  pointer-events: auto;
+/* —— Booking widget (homepage placeholder) —— */
+.featured-tours__booking {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--home-cta-gap);
 }
 
 .booking-widget {
@@ -627,49 +623,6 @@
   }
 }
 
-/* Mobile & tablet — widget in document flow (prevents overlap) */
-@media (max-width: 1023px) {
-  .hero--home {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: stretch;
-    height: auto;
-    min-height: 100svh;
-    max-height: none;
-    margin-bottom: 0;
-    overflow: visible;
-  }
-
-  .hero--home .hero__container {
-    flex: 1 1 auto;
-  }
-
-  .hero__booking {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    flex-shrink: 0;
-    transform: none;
-    margin-top: var(--space-md);
-    padding: 0 var(--space-md) var(--space-md);
-    pointer-events: none;
-  }
-}
-
-/* Desktop — widget straddles hero / content boundary */
-@media (min-width: 1024px) {
-  .hero__booking {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0 var(--space-md);
-    pointer-events: none;
-    transform: translateY(50%);
-  }
-}
-
 /* —— Homepage flow spacing ——
    One gap owner per boundary; no stacked .section padding.
    --home-block-gap: standard rhythm between sections
@@ -701,12 +654,6 @@
   background-color: var(--color-bg);
   padding-top: var(--home-block-gap);
   padding-bottom: var(--home-block-gap);
-}
-
-@media (min-width: 1024px) {
-  .section.home-intro {
-    padding-top: calc(2.25rem + var(--home-block-gap));
-  }
 }
 
 .section.destinations {
@@ -1179,7 +1126,7 @@
 
 .featured-tours__cta {
   margin-top: var(--home-cta-gap);
-  margin-bottom: var(--home-cta-gap);
+  margin-bottom: 0;
   text-align: center;
 }
 
