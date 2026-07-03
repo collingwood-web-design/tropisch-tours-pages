@@ -1067,7 +1067,7 @@
 /* —— Tour detail breadcrumb —— */
 .tour-breadcrumb {
   padding-block: var(--space-sm);
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg-muted);
   border-bottom: 1px solid var(--color-border);
 }
 
