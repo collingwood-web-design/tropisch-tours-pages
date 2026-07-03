@@ -132,7 +132,7 @@
         },
         {
           root: null,
-          rootMargin: "-40% 0px -45% 0px",
+          rootMargin: "-9rem 0px -45% 0px",
           threshold: 0,
         }
       );

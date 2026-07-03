@@ -86,7 +86,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=76">
+  <link rel="stylesheet" href="css/style.css?v=79">
 </head>
 <body itemscope itemtype="https://schema.org/CollectionPage">
 
@@ -96,7 +96,7 @@
 
   <a class="skip-link" href="#packages">Skip to packages</a>
 
-  <header class="site-header site-header--over-hero">
+  <header class="site-header">
     <div class="header-contact">
       <div class="container header-contact__inner">
         <div class="header-contact__details">
@@ -149,42 +149,21 @@
     </div>
   </header>
 
-  <main class="site-main site-main--flush" id="main-content">
+  <main class="site-main" id="main-content">
 
-    <section class="hero hero--home page-hero--tours" aria-labelledby="tours-hero-heading">
-      <div class="hero__carousel" aria-hidden="true">
-        <div class="hero__slide hero__slide--packages is-active">
-          <img
-            src="assets/images/packages-tours%20hero.jpg"
-            alt="Kenya safari and coastal tour packages — Maasai Mara and Mombasa beach escapes"
-            width="1920"
-            height="1080"
-            fetchpriority="high"
-          >
+    <header class="tours-intro section" aria-labelledby="tours-hero-heading">
+      <div class="container tours-intro__inner">
+        <h1 id="tours-hero-heading" class="tours-intro__title">Our Tours</h1>
+        <p class="tours-intro__lead">Curated safari and coastal packages from Nairobi — designed with local expertise, comfort, and care.</p>
+        <p class="tours-intro__note">Choose a package below for pricing and inclusions, or contact us for a fully custom itinerary.</p>
+        <div class="tours-intro__cta">
+          <a href="contact.html" class="btn btn--accent">Plan a Custom Journey<span class="btn__arrow" aria-hidden="true"> →</span></a>
         </div>
       </div>
-      <div class="hero__overlay" aria-hidden="true"></div>
-      <div class="container hero__container">
-        <div class="hero__content">
-          <h1 id="tours-hero-heading">Our Tours</h1>
-          <p class="hero__lead">Curated safari and coastal packages from Nairobi — designed with local expertise, comfort, and care.</p>
-          <p class="hero__lead page-hero__lead-secondary">Choose a package below for pricing and inclusions, or contact us for a fully custom itinerary.</p>
-          <div class="hero__actions">
-            <a href="contact.html" class="btn btn--accent">Plan a Custom Journey<span class="btn__arrow" aria-hidden="true"> →</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </header>
 
-    <nav class="tour-picker" id="packages" aria-label="Choose a package">
+    <nav class="tour-picker tour-picker--sticky" id="packages" aria-label="Choose a package">
       <div class="container tour-picker__inner">
-        <header class="tour-picker__header">
-          <h2 class="tour-picker__title why-travel__title">
-            <span class="why-travel__title-line" aria-hidden="true"></span>
-            Our Packages
-            <span class="why-travel__title-line" aria-hidden="true"></span>
-          </h2>
-        </header>
         <div class="tour-picker__list">
           <a href="#maasai-mara" class="tour-picker__item is-active" data-tour-target="maasai-mara">
             <span class="tour-picker__icon" aria-hidden="true">
