@@ -122,6 +122,10 @@
     });
 
     if ("IntersectionObserver" in window) {
+      const pickerRootMargin = window.matchMedia("(max-width: 1023px)").matches
+        ? "-6rem 0px -45% 0px"
+        : "-9rem 0px -45% 0px";
+
       const observer = new IntersectionObserver(
         function (entries) {
           entries.forEach(function (entry) {
@@ -132,7 +136,7 @@
         },
         {
           root: null,
-          rootMargin: "-9rem 0px -45% 0px",
+          rootMargin: pickerRootMargin,
           threshold: 0,
         }
       );
