@@ -1071,6 +1071,20 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+.site-main--tour-detail {
+  padding-top: calc(var(--header-height) + var(--space-sm));
+}
+
+@media (min-width: 768px) {
+  .site-main--tour-detail {
+    padding-top: calc(var(--header-height) + var(--space-md));
+  }
+}
+
+.site-main--tour-detail .tour-package--detail {
+  padding-top: var(--space-md);
+}
+
 .tour-breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
