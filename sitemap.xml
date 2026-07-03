@@ -16,6 +16,11 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#amboseli</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#mombasa</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

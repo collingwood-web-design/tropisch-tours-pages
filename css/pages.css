@@ -2330,6 +2330,11 @@
   background-color: rgba(184, 149, 108, 0.08);
 }
 
+/* Centre a single item on the last row (e.g. 4 packages in a 3-column grid) */
+.tour-picker__item:last-child:nth-child(3n + 1):not(:only-child) {
+  grid-column: 2;
+}
+
 .tour-picker__icon {
   display: flex;
   align-items: center;
