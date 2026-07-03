@@ -502,7 +502,7 @@
   .about-section__header
 ) {
   text-align: center;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 :is(
@@ -532,7 +532,7 @@
     .home-instagram__header,
     .about-section__header
   ) {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
   }
 
   :is(
@@ -664,28 +664,34 @@
   }
 }
 
-.home-intro .section-lead,
-.why-travel .section-lead {
-  margin-bottom: var(--space-sm);
-}
-
-.about-section__intro {
+/* Intro → content rhythm (home & about; tours unchanged) */
+:is(
+  .home-intro .section-lead,
+  .why-travel .section-lead,
+  .experience-pathways__intro,
+  .experience-pathways__intro.section-lead,
+  .why-travel__intro .section-lead,
+  .about-section__intro
+) {
   margin-top: 0;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .about-section__header .about-section__intro {
   margin-top: var(--space-xs);
+  margin-bottom: 0;
 }
 
 @media (min-width: 1024px) {
-  .home-intro .section-lead,
-  .why-travel .section-lead {
-    margin-bottom: var(--space-md);
-  }
-
-  .about-section__intro {
-    margin-bottom: var(--space-md);
+  :is(
+    .home-intro .section-lead,
+    .why-travel .section-lead,
+    .experience-pathways__intro,
+    .experience-pathways__intro.section-lead,
+    .why-travel__intro .section-lead,
+    .about-section__intro
+  ) {
+    margin-bottom: var(--space-sm);
   }
 }
 
@@ -1139,13 +1145,11 @@
 }
 
 .experience-pathways__intro {
-  margin-top: 0;
   font-size: 1.02rem;
   line-height: 1.7;
   color: var(--color-text-muted);
   max-width: 42rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .experience-pathways__grid {
@@ -1307,13 +1311,7 @@
 .why-travel__intro {
   text-align: center;
   max-width: 40rem;
-  margin: 0 auto var(--space-md);
-}
-
-@media (min-width: 1024px) {
-  .why-travel__intro {
-    margin-bottom: var(--space-lg);
-  }
+  margin-inline: auto;
 }
 
 .why-travel__highlights {
@@ -1671,7 +1669,7 @@
 /* —— About —— */
 .about-section__intro {
   max-width: 40rem;
-  margin: 0 auto var(--space-sm);
+  margin-inline: auto;
   color: var(--color-text-muted);
   line-height: 1.65;
   text-align: center;
