@@ -502,7 +502,7 @@
   .about-section__header
 ) {
   text-align: center;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 :is(
@@ -519,7 +519,7 @@
   .about-section__cta,
   .featured-tours__booking
 ) {
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
   text-align: center;
 }
 
@@ -532,7 +532,7 @@
     .home-instagram__header,
     .about-section__header
   ) {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
   }
 
   :is(
@@ -548,7 +548,7 @@
     .about-section__cta,
     .featured-tours__booking
   ) {
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md);
   }
 }
 
@@ -587,12 +587,40 @@
   .section.about-destinations,
   .section.about-full-banner
 ) {
-  padding-block: var(--space-md);
+  padding-block: var(--space-sm);
 }
 
 .section.home-intro,
 .section.about-story {
-  padding-top: var(--space-sm);
+  padding-top: var(--space-xs);
+}
+
+.site-main--flush > :is(
+  .section.home-intro,
+  .section.destinations,
+  .section.experience-pathways,
+  .section.why-travel,
+  .section.featured-tours,
+  .section.home-instagram,
+  .section.about-story,
+  .section.about-services,
+  .section.about-tailor,
+  .section.about-destinations,
+  .section.about-full-banner
+) + :is(
+  .section.home-intro,
+  .section.destinations,
+  .section.experience-pathways,
+  .section.why-travel,
+  .section.featured-tours,
+  .section.home-instagram,
+  .section.about-story,
+  .section.about-services,
+  .section.about-tailor,
+  .section.about-destinations,
+  .section.about-full-banner
+) {
+  padding-top: 0;
 }
 
 @media (min-width: 768px) {
@@ -609,12 +637,12 @@
     .section.about-destinations,
     .section.about-full-banner
   ) {
-    padding-block: var(--space-lg);
+    padding-block: var(--space-md);
   }
 
   .section.home-intro,
   .section.about-story {
-    padding-top: var(--space-md);
+    padding-top: var(--space-sm);
   }
 }
 
@@ -632,27 +660,32 @@
     .section.about-destinations,
     .section.about-full-banner
   ) {
-    padding-block: var(--space-xl);
+    padding-block: var(--space-lg);
   }
 }
 
 .home-intro .section-lead,
 .why-travel .section-lead {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .about-section__intro {
-  margin-bottom: var(--space-md);
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+}
+
+.about-section__header .about-section__intro {
+  margin-top: var(--space-xs);
 }
 
 @media (min-width: 1024px) {
   .home-intro .section-lead,
   .why-travel .section-lead {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
   }
 
   .about-section__intro {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
   }
 }
 
@@ -1102,7 +1135,7 @@
 }
 
 .experience-pathways__subtitle {
-  margin: 0 auto var(--space-md);
+  margin: 0 auto var(--space-sm);
 }
 
 .experience-pathways__intro {
@@ -1638,7 +1671,7 @@
 /* —— About —— */
 .about-section__intro {
   max-width: 40rem;
-  margin: var(--space-sm) auto 0;
+  margin: 0 auto var(--space-sm);
   color: var(--color-text-muted);
   line-height: 1.65;
   text-align: center;
@@ -1647,14 +1680,14 @@
 .about-split {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-lg);
+  gap: var(--space-md);
   align-items: center;
 }
 
 @media (min-width: 768px) {
   .about-split {
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-xl);
+    gap: var(--space-lg);
   }
 }
 
@@ -1701,7 +1734,7 @@
 }
 
 .about-full-banner__caption {
-  margin: var(--space-md) auto 0;
+  margin: var(--space-sm) auto 0;
   max-width: 36rem;
   text-align: center;
   font-size: clamp(0.95rem, 2vw, 1.05rem);
