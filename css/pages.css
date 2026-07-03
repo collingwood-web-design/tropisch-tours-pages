@@ -1747,6 +1747,8 @@
 .legal-content__updated {
   font-size: 0.85rem;
   letter-spacing: 0.04em;
+  margin-top: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .legal-content__body {
