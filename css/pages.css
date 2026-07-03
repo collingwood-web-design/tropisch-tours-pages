@@ -211,26 +211,24 @@
 }
 
 .hero--home .hero__overlay {
-  background:
-    linear-gradient(
-      to right,
-      rgba(15, 28, 22, 0.55) 0%,
-      rgba(15, 28, 22, 0.28) 34%,
-      rgba(15, 28, 22, 0.06) 52%,
-      transparent 62%
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(15, 28, 22, 0.28) 0%,
-      transparent 28%,
-      transparent 78%,
-      rgba(15, 28, 22, 0.16) 100%
-    );
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 28, 22, 0.2) 0%,
+    rgba(15, 28, 22, 0.32) 55%,
+    rgba(15, 28, 22, 0.42) 100%
+  );
 }
 
-.hero--home .hero__content h1,
-.hero--home .hero__lead {
-  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
+.hero--home .hero__content h1 {
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.45),
+    0 0 20px rgba(0, 0, 0, 0.28);
+}
+
+.hero--home .hero__lead,
+.page-hero--about .page-hero__lead-secondary,
+.page-hero--tours .page-hero__lead-secondary {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .hero--home .hero__container {
@@ -269,6 +267,20 @@
 
   .hero--home .hero__actions .btn {
     min-width: 11.5rem;
+  }
+
+  /* Nudge busy image areas away from the text block on small screens */
+  .hero--home .hero__slide--zebra {
+    --hero-pos-x: 62%;
+    --hero-pos-y: 50%;
+  }
+
+  .hero--home .hero__slide--cultural {
+    --hero-pos-y: 58%;
+  }
+
+  .hero--home .hero__slide--elephant {
+    --hero-pos-x: 72%;
   }
 }
 
@@ -656,12 +668,13 @@
 
 @media (max-width: 767px) {
   .page-hero--about .hero__slide--sundowner {
-    --hero-pos-y: 64%;
+    --hero-pos-x: 58%;
+    --hero-pos-y: 68%;
   }
 
   .page-hero--tours .hero__slide--packages {
-    --hero-pos-x: 52%;
-    --hero-pos-y: 58%;
+    --hero-pos-x: 58%;
+    --hero-pos-y: 62%;
   }
 }
 
