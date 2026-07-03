@@ -945,9 +945,17 @@
   margin-left: 0.35em;
 }
 
+.home-journey-cta--focus-top .home-journey-cta__media img {
+  object-position: center top;
+}
+
 @media (min-width: 768px) {
   .home-journey-cta__media img {
     object-position: center 60%;
+  }
+
+  .home-journey-cta--focus-top .home-journey-cta__media img {
+    object-position: center top;
   }
 }
 
