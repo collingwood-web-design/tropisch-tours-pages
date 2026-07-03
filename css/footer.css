@@ -60,6 +60,21 @@
   max-width: 28rem;
 }
 
+.footer-brand__legal {
+  margin-top: var(--space-sm);
+  font-size: 0.85rem;
+}
+
+.footer-brand__legal a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.footer-brand__legal a:hover {
+  color: var(--color-accent-light);
+}
+
 .footer-nav h4,
 .footer-contact h4 {
   font-family: var(--font-body);
