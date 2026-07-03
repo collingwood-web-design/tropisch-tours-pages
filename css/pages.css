@@ -375,9 +375,16 @@
   opacity: 0.92;
 }
 
+.booking-widget__note {
+  margin: 0.35rem 0 0;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .booking-widget {
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.85fr) minmax(0, 0.95fr) minmax(0, 0.95fr) auto;
     align-items: stretch;
     border-radius: 2rem;
   }
@@ -404,7 +411,7 @@
 
 /* Tablet layout — used on tours page search mock-up */
 .booking-widget--tablet {
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.85fr) minmax(0, 0.95fr) minmax(0, 0.95fr) auto;
   align-items: stretch;
   border-radius: 2rem;
   max-width: 52rem;
