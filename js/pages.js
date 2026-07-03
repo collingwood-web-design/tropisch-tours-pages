@@ -107,8 +107,39 @@
   /* Tour picker — highlight active package on scroll */
   const pickerItems = document.querySelectorAll(".tour-picker__item[data-tour-target]");
   const tourSections = document.querySelectorAll(".tour-package[data-tour-id]");
+  const tourPicker = document.querySelector(".tour-picker");
+  const siteHeader = document.querySelector(".site-header");
 
   if (pickerItems.length && tourSections.length) {
+    function getTourScrollOffset() {
+      const headerHeight = siteHeader ? siteHeader.offsetHeight : 0;
+      const pickerHeight = tourPicker ? tourPicker.offsetHeight : 0;
+      return headerHeight + pickerHeight + 12;
+    }
+
+    function updateTourPickerScrollOffset() {
+      const pickerHeight = tourPicker ? tourPicker.offsetHeight : 0;
+      document.documentElement.style.setProperty(
+        "--tour-picker-scroll-offset",
+        pickerHeight + 12 + "px"
+      );
+      return getTourScrollOffset();
+    }
+
+    function scrollToTourSection(id, behavior) {
+      const section = document.getElementById(id);
+      if (!section) return;
+
+      const offset = updateTourPickerScrollOffset();
+      const top =
+        section.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: Math.max(0, top),
+        behavior: behavior || "smooth",
+      });
+    }
+
     function setActivePicker(id) {
       pickerItems.forEach(function (item) {
         item.classList.toggle("is-active", item.dataset.tourTarget === id);
@@ -116,34 +147,61 @@
     }
 
     pickerItems.forEach(function (item) {
-      item.addEventListener("click", function () {
-        setActivePicker(item.dataset.tourTarget);
+      item.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = item.dataset.tourTarget;
+        setActivePicker(id);
+        scrollToTourSection(id, "smooth");
+        history.pushState(null, "", "#" + id);
       });
     });
 
+    window.addEventListener("resize", updateTourPickerScrollOffset);
+
+    if (window.location.hash) {
+      const hashId = window.location.hash.slice(1);
+      if (document.getElementById(hashId)) {
+        requestAnimationFrame(function () {
+          setActivePicker(hashId);
+          scrollToTourSection(hashId, "auto");
+        });
+      }
+    } else {
+      updateTourPickerScrollOffset();
+    }
+
     if ("IntersectionObserver" in window) {
-      const pickerRootMargin = window.matchMedia("(max-width: 1023px)").matches
-        ? "-6rem 0px -45% 0px"
-        : "-9rem 0px -45% 0px";
+      let tourObserver = null;
 
-      const observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              setActivePicker(entry.target.dataset.tourId);
-            }
-          });
-        },
-        {
-          root: null,
-          rootMargin: pickerRootMargin,
-          threshold: 0,
+      function bindTourObserver() {
+        if (tourObserver) {
+          tourObserver.disconnect();
         }
-      );
 
-      tourSections.forEach(function (section) {
-        observer.observe(section);
-      });
+        const offsetRem = (updateTourPickerScrollOffset() / 16).toFixed(2);
+
+        tourObserver = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                setActivePicker(entry.target.dataset.tourId);
+              }
+            });
+          },
+          {
+            root: null,
+            rootMargin: "-" + offsetRem + "rem 0px -45% 0px",
+            threshold: 0,
+          }
+        );
+
+        tourSections.forEach(function (section) {
+          tourObserver.observe(section);
+        });
+      }
+
+      bindTourObserver();
+      window.addEventListener("resize", bindTourObserver);
     }
   }
 
