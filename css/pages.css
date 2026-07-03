@@ -919,6 +919,10 @@
   pointer-events: none;
 }
 
+.home-journey-cta--light-overlay .home-journey-cta__overlay {
+  background: rgba(30, 58, 47, 0.4);
+}
+
 .home-journey-cta__container {
   position: relative;
   z-index: 2;
