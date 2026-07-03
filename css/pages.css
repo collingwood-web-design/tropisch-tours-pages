@@ -1052,6 +1052,66 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-lg);
   }
+
+  .featured-tours__grid--catalog {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .featured-tours__grid--catalog {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* —— Tour detail breadcrumb —— */
+.tour-breadcrumb {
+  padding-block: var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tour-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.tour-breadcrumb__item {
+  color: var(--color-text-muted);
+}
+
+.tour-breadcrumb__item a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.tour-breadcrumb__item a:hover {
+  text-decoration: underline;
+}
+
+.tour-breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.tour-breadcrumb__item--current {
+  color: var(--color-text);
+}
+
+.tour-package--detail {
+  scroll-margin-top: var(--header-height);
+}
+
+.tour-package__header h1:not(.tour-package__title),
+.tour-package__header h2:not(.tour-package__title) {
+  margin-bottom: var(--space-xs);
 }
 
 /* —— Destinations (homepage) —— */
@@ -2499,10 +2559,6 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: var(--space-xs);
-}
-
-.tour-package__header h2:not(.tour-package__title) {
   margin-bottom: var(--space-xs);
 }
 

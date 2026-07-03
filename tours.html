@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Book Maasai Mara, Amboseli, and Mombasa tour packages from Nairobi — pricing, inclusions, galleries, and tailor-made Kenya travel with Tropisch Tours and Travel.">
+  <meta name="description" content="Browse Maasai Mara, Amboseli, and Mombasa tour packages from Nairobi — curated safaris and coastal escapes with Tropisch Tours and Travel.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Tropisch Tours and Travel">
   <meta name="geo.region" content="KE-110">
@@ -27,11 +27,11 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebPage",
+        "@type": "CollectionPage",
         "@id": "https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#webpage",
         "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html",
         "name": "Kenya Safari & Beach Tour Packages | Tropisch Tours and Travel",
-        "description": "Book Maasai Mara, Amboseli, and Mombasa tour packages from Nairobi with Tropisch Tours and Travel.",
+        "description": "Browse Maasai Mara, Amboseli, and Mombasa tour packages from Nairobi with Tropisch Tours and Travel.",
         "inLanguage": "en-KE"
       },
       {
@@ -42,59 +42,46 @@
         ]
       },
       {
-        "@type": "TouristTrip",
-        "name": "Maasai Mara Wilderness Safari",
-        "description": "3-day Maasai Mara safari with game drives, Mara Intrepids Lodge, and private 4x4 transport from Nairobi.",
-        "touristType": "Wildlife safari",
-        "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#maasai-mara",
-        "image": "https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-1.jpg",
-        "provider": { "@type": "TravelAgency", "name": "Tropisch Tours and Travel", "telephone": "+254703112833", "email": "tropischtours@gmail.com" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "2162",
-          "highPrice": "2464",
-          "offerCount": "3"
-        }
-      },
-      {
-        "@type": "TouristTrip",
-        "name": "Amboseli Wilderness Safari",
-        "description": "3-day Amboseli safari with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 transport from Nairobi.",
-        "touristType": "Wildlife safari",
-        "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#amboseli",
-        "image": "https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg",
-        "provider": { "@type": "TravelAgency", "name": "Tropisch Tours and Travel", "telephone": "+254703112833", "email": "tropischtours@gmail.com" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "1143",
-          "highPrice": "1412",
-          "offerCount": "3"
-        }
-      },
-      {
-        "@type": "TouristTrip",
-        "name": "Mombasa Beach Escape",
-        "description": "3-day all-inclusive Mombasa beach package at Voyager Beach Resort with SGR travel and Old Town excursion.",
-        "touristType": "Beach holiday",
-        "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#mombasa",
-        "image": "https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-2.jpg",
-        "provider": { "@type": "TravelAgency", "name": "Tropisch Tours and Travel", "telephone": "+254703112833", "email": "tropischtours@gmail.com" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "799",
-          "highPrice": "1020",
-          "offerCount": "3"
-        }
-      },
-      {
-        "@type": "Service",
-        "name": "Tailor-Made Kenya Safaris & Travel",
-        "description": "Custom itineraries for Amboseli, Tsavo, Diani, Zanzibar, and bespoke multi-destination journeys across East Africa.",
-        "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#tailor-made",
-        "provider": { "@type": "TravelAgency", "name": "Tropisch Tours and Travel" }
+        "@type": "ItemList",
+        "name": "Kenya Tour Packages",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Maasai Mara Wilderness Safari",
+              "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tour-maasai-mara.html"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Amboseli Wilderness Safari",
+              "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tour-amboseli.html"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Mombasa Beach Escape",
+              "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/tour-mombasa.html"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Service",
+              "name": "Tailor-Made Kenya Safaris & Travel",
+              "url": "https://collingwood-web-design.github.io/tropisch-tours-pages/contact.html"
+            }
+          }
+        ]
       }
     ]
   }
@@ -102,15 +89,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=93">
+  <link rel="stylesheet" href="css/style.css?v=94">
 </head>
 <body itemscope itemtype="https://schema.org/CollectionPage">
 
   <meta itemprop="url" content="https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html">
   <meta itemprop="name" content="Kenya Safari &amp; Beach Tour Packages | Tropisch Tours and Travel">
-  <meta itemprop="description" content="Book Maasai Mara safari and Mombasa beach packages from Nairobi with Tropisch Tours and Travel.">
+  <meta itemprop="description" content="Browse Maasai Mara, Amboseli, and Mombasa tour packages from Nairobi with Tropisch Tours and Travel.">
 
-  <a class="skip-link" href="#packages">Skip to packages</a>
+  <a class="skip-link" href="#tour-packages">Skip to packages</a>
 
   <header class="site-header site-header--over-hero">
     <div class="header-contact">
@@ -171,7 +158,7 @@
       <div class="tours-intro__media" aria-hidden="true">
         <img
           src="assets/hero/tours-page-hero-1.jpg"
-          alt="Kenya safari and coastal tour packages — Maasai Mara and Mombasa beach escapes"
+          alt="Kenya safari and coastal tour packages — elephants on the savanna"
           width="1920"
           height="1080"
           fetchpriority="high"
@@ -188,705 +175,121 @@
       </div>
     </header>
 
-    <nav class="tour-picker tour-picker--sticky" id="packages" aria-label="Choose a package">
-      <div class="container tour-picker__inner">
-        <div class="tour-picker__list">
-          <a href="#maasai-mara" class="tour-picker__item is-active" data-tour-target="maasai-mara">
-            <span class="tour-picker__icon" aria-hidden="true">
-              <img src="assets/icons/maasai%20mara%20icon-1.svg" alt="Maasai Mara safari package" width="72" height="72" loading="lazy">
-            </span>
-            <span class="tour-picker__name">Maasai Mara</span>
-            <span class="tour-picker__type">Wilderness Safari</span>
-          </a>
-          <a href="#amboseli" class="tour-picker__item" data-tour-target="amboseli">
-            <span class="tour-picker__icon" aria-hidden="true">
-              <img src="assets/icons/amboseli%20icon%201.svg" alt="Amboseli safari package" width="72" height="72" loading="lazy">
-            </span>
-            <span class="tour-picker__name">Amboseli</span>
-            <span class="tour-picker__type">Wilderness Safari</span>
-          </a>
-          <a href="#mombasa" class="tour-picker__item" data-tour-target="mombasa">
-            <span class="tour-picker__icon" aria-hidden="true">
-              <img src="assets/icons/mombasa-icon%201.svg" alt="Mombasa beach package" width="72" height="72" loading="lazy">
-            </span>
-            <span class="tour-picker__name">Mombasa</span>
-            <span class="tour-picker__type">Beach Escape</span>
-          </a>
-          <a href="#tailor-made" class="tour-picker__item" data-tour-target="tailor-made">
-            <span class="tour-picker__icon" aria-hidden="true">
-              <img src="assets/icons/Tailor-Made-icons-for-you-2.svg" alt="Tailor-made travel package" width="72" height="72" loading="lazy">
-            </span>
-            <span class="tour-picker__name">Tailor-Made</span>
-            <span class="tour-picker__type">Custom Itineraries</span>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <article class="tour-package" id="maasai-mara" data-tour-id="maasai-mara" aria-labelledby="mara-heading" itemscope itemtype="https://schema.org/TouristTrip">
-      <meta itemprop="name" content="Maasai Mara Wilderness Safari">
-      <meta itemprop="description" content="3-day Maasai Mara safari with game drives, full board accommodation at Mara Intrepids Lodge, and private 4x4 transport from Nairobi.">
-      <meta itemprop="touristType" content="Wildlife safari">
-      <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#maasai-mara">
-      <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-1.jpg">
-      <span itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
-        <meta itemprop="priceCurrency" content="USD">
-        <meta itemprop="lowPrice" content="2162">
-        <meta itemprop="highPrice" content="2464">
-        <meta itemprop="offerCount" content="3">
-      </span>
-      <span itemprop="provider" itemscope itemtype="https://schema.org/TravelAgency">
-        <meta itemprop="name" content="Tropisch Tours and Travel">
-      </span>
+    <section class="section featured-tours featured-tours--catalog" id="tour-packages" aria-labelledby="tour-packages-heading">
       <div class="container">
-        <header class="tour-package__header">
-          <p class="tour-package__meta">Safari &middot; Full Board</p>
-          <h2 id="mara-heading">Maasai Mara Wilderness Safari</h2>
-          <p class="tour-package__details">3 Days / 2 Nights &nbsp;|&nbsp; Mara Intrepids Lodge, Masai Mara</p>
-        </header>
-
-        <div class="tour-carousel" data-tour-carousel aria-roledescription="carousel" aria-label="Maasai Mara gallery">
-          <div class="tour-carousel__viewport">
-            <div class="tour-carousel__track">
-              <div class="tour-carousel__slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 9">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-1.jpg" alt="Maasai warriors performing a traditional jump dance" width="1920" height="1080" fetchpriority="high">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-8.jpg" alt="Wildebeest herd charging down a dusty embankment during the Great Migration in the Maasai Mara" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-3.jpg" alt="Zebra mother and foal on the Maasai Mara savanna" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-4.jpg" alt="Leopard walking across the Maasai Mara savanna" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-6.jpg" alt="Giraffes gathered on the golden savanna of the Maasai Mara" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="6 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-11.jpg" alt="African elephant standing on the open savanna of the Maasai Mara" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="7 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-7.jpg" alt="Luxury safari tent with four-poster bed and private deck overlooking the Maasai Mara" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="8 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-10.jpg" alt="Outdoor bush breakfast table set among the trees on a Maasai Mara safari" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="9 of 9" aria-hidden="true">
-                <img src="assets/images/Maasai%20Mara%20Wilderness%20Safari/Maasai%20Mara%20Wilderness%20Safari-tours-12.jpg" alt="Open-air dining pavilion at a safari lodge in the Maasai Mara at night" width="1920" height="1080" loading="lazy">
-              </div>
-            </div>
-          </div>
-          <div class="tour-carousel__controls">
-            <button type="button" class="tour-carousel__btn tour-carousel__btn--prev" aria-label="Previous image">
-              <span aria-hidden="true">&larr;</span>
-            </button>
-            <div class="tour-carousel__dots" role="tablist" aria-label="Choose slide"></div>
-            <button type="button" class="tour-carousel__btn tour-carousel__btn--next" aria-label="Next image">
-              <span aria-hidden="true">&rarr;</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="package-layout tour-package__body">
-          <div class="package-main">
-            <h3>About This Package</h3>
-            <p>Experience the breathtaking beauty of the world-famous Masai Mara, home to Africa&rsquo;s most iconic wildlife and stunning landscapes. From thrilling game drives to unforgettable sunsets over the savannah, this safari offers the perfect blend of adventure, relaxation, and authentic African experiences.</p>
-
-            <div class="package-block">
-              <h4>Package Highlights</h4>
-              <ul class="package-list package-list--highlights">
-                <li>Exciting game drives in the Masai Mara National Reserve</li>
-                <li>Opportunity to spot the Big Five</li>
-                <li>Spectacular wildlife viewing and photography</li>
-                <li>Scenic landscapes and breathtaking sunsets</li>
-                <li>Optional visit to a traditional Maasai village</li>
-                <li>Professional driver-guide throughout the safari</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>What&rsquo;s Included</h4>
-              <ul class="package-list package-list--included">
-                <li>Masai Mara National Park entry fees</li>
-                <li>Private luxury 4&times;4 Land Cruiser with professional English-speaking driver-guide (other languages available)</li>
-                <li>Door-to-door pickup and drop-off from your place of residence in Nairobi</li>
-                <li>2 nights full board accommodation</li>
-                <li>All meals &mdash; breakfast, lunch and dinner throughout</li>
-                <li>2 private game drives per day &mdash; morning and evening</li>
-                <li>Bottled water throughout the journey and game drives</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>Not Included</h4>
-              <ul class="package-list package-list--excluded">
-                <li>Optional activities and personal excursions</li>
-                <li>Personal expenses &mdash; drinks, laundry, calls</li>
-                <li>Tips and gratuities</li>
-                <li>Travel insurance</li>
-                <li>Any items not specifically mentioned under inclusions</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>Ideal For</h4>
-              <ul class="package-tags">
-                <li>Couples &amp; Honeymooners</li>
-                <li>Families</li>
-                <li>Solo Travellers</li>
-                <li>Groups</li>
-                <li>Wildlife Enthusiasts</li>
-                <li>Photography Lovers</li>
-              </ul>
-            </div>
-          </div>
-
-          <aside class="package-sidebar">
-            <div class="pricing-card">
-              <h3>Pricing</h3>
-              <p class="pricing-card__note">Price per person (USD)</p>
-              <table class="pricing-table">
-                <thead>
-                  <tr>
-                    <th>Group Size</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2 Persons</td>
-                    <td>$2,464</td>
-                  </tr>
-                  <tr>
-                    <td>4 Persons</td>
-                    <td>$2,330</td>
-                  </tr>
-                  <tr>
-                    <td>6+ Persons</td>
-                    <td>$2,162</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="contact.html" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
-              <p class="pricing-card__contact">
-                <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a><br>
-                <a href="tel:+254703112833">+254 703 112 833</a>
-              </p>
-            </div>
-
-            <div class="package-sidebar__search">
-              <p class="package-sidebar__search-label">Find your trip</p>
-              <form class="booking-widget booking-widget--tablet booking-widget--sidebar" action="tours.html" method="get" aria-label="Search packages (coming soon)">
-                <p class="visually-hidden">Booking search — placeholder fields for a future widget.</p>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="mara-booking-destination">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"/>
-                    </svg>
-                    <select id="mara-booking-destination" class="booking-widget__select" name="destination" disabled>
-                      <option selected>Maasai Mara</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="mara-booking-duration">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M12 8v4.25l2.75 1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <select id="mara-booking-duration" class="booking-widget__select" name="duration" disabled>
-                      <option selected>3 Days / 2 Nights</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="mara-booking-price">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3" y="6.5" width="18" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M6.5 9.5h.01M17.5 14.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <select id="mara-booking-price" class="booking-widget__select" name="price" disabled>
-                      <option selected>From $2,162</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <button type="button" class="btn btn--primary booking-widget__submit" disabled>Search</button>
-              </form>
-              <p class="package-sidebar__search-note">Search and online booking coming soon.</p>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </article>
-
-    <article class="tour-package tour-package--alt" id="amboseli" data-tour-id="amboseli" aria-labelledby="amboseli-heading" itemscope itemtype="https://schema.org/TouristTrip">
-      <meta itemprop="name" content="Amboseli Wilderness Safari">
-      <meta itemprop="description" content="3-day Amboseli safari with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 transport from Nairobi.">
-      <meta itemprop="touristType" content="Wildlife safari">
-      <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#amboseli">
-      <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg">
-      <span itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
-        <meta itemprop="priceCurrency" content="USD">
-        <meta itemprop="lowPrice" content="1143">
-        <meta itemprop="highPrice" content="1412">
-        <meta itemprop="offerCount" content="3">
-      </span>
-      <span itemprop="provider" itemscope itemtype="https://schema.org/TravelAgency">
-        <meta itemprop="name" content="Tropisch Tours and Travel">
-      </span>
-      <div class="container">
-        <header class="tour-package__header">
-          <p class="tour-package__meta">Safari &middot; Full Board</p>
-          <h2 id="amboseli-heading">Amboseli Wilderness Safari</h2>
-          <p class="tour-package__details">3 Days / 2 Nights &nbsp;|&nbsp; Ol Tukai Lodge, Amboseli</p>
-        </header>
-
-        <div class="tour-carousel" data-tour-carousel aria-roledescription="carousel" aria-label="Amboseli gallery">
-          <div class="tour-carousel__viewport">
-            <div class="tour-carousel__track">
-              <div class="tour-carousel__slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 13">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-7.jpg" alt="Two cheetahs resting on a grassy mound in Amboseli National Park" width="1920" height="1080" fetchpriority="high">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-5.jpg" alt="Wildebeest herd crossing a stream in Amboseli with flamingos on the lake beyond" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-8.jpg" alt="Lioness in golden light on the Amboseli savanna" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-6.jpg" alt="African buffalo on the grassy plains of Amboseli National Park" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-4.jpg" alt="Giraffes walking through golden light on the Amboseli savanna" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="6 of 13" aria-hidden="true">
-                <img src="assets/hero/Plan-Your-Journey.jpg" alt="Cheetah walking across the savanna at golden hour" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="7 of 13" aria-hidden="true">
-                <img src="assets/hero/Welcome%20to%20Tropisch%20Tours%20%26%20Travel-2.jpg" alt="African elephant on the Amboseli plains with Mount Kilimanjaro behind" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="8 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-9.jpg" alt="Snow-capped Mount Kilimanjaro rising above the clouds over the Amboseli savanna" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="9 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-10.jpg" alt="Grey crowned crane with golden crest on the Amboseli savanna" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="10 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-18..jpg" alt="Two zebras at a watering hole in Amboseli National Park" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="11 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-12.jpg" alt="Aerial view of Ol Tukai Lodge with swimming pool and safari lodge buildings in Amboseli" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="12 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-14.jpg" alt="Evening bonfire with Maasai hosts and outdoor lounge seating at Ol Tukai Lodge, Amboseli" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="13 of 13" aria-hidden="true">
-                <img src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-16..jpg" alt="Stone veranda with wicker chairs and tea service at Ol Tukai Lodge, Amboseli" width="1920" height="1080" loading="lazy">
-              </div>
-            </div>
-          </div>
-          <div class="tour-carousel__controls">
-            <button type="button" class="tour-carousel__btn tour-carousel__btn--prev" aria-label="Previous image">
-              <span aria-hidden="true">&larr;</span>
-            </button>
-            <div class="tour-carousel__dots" role="tablist" aria-label="Choose slide"></div>
-            <button type="button" class="tour-carousel__btn tour-carousel__btn--next" aria-label="Next image">
-              <span aria-hidden="true">&rarr;</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="package-layout tour-package__body">
-          <div class="package-main">
-            <h3>About This Package</h3>
-            <p>At the foot of Africa&rsquo;s greatest mountain lies one of Kenya&rsquo;s most breathtaking wildlife sanctuaries. Amboseli National Park, home to some of the largest free-roaming elephant herds on the continent, offers a safari experience unlike any other &mdash; where iconic wildlife roams against the majestic backdrop of Mount Kilimanjaro. This exclusive 3-day package places you right in the heart of it all, with luxury accommodation at Ol Tukai Lodge, daily private game drives, and seamless door-to-door transport in a fully equipped 4&times;4 Land Cruiser.</p>
-
-            <div class="package-block">
-              <h4>Wildlife Highlights</h4>
-              <ul class="package-list package-list--highlights">
-                <li>Amboseli&rsquo;s legendary large elephant herds &mdash; some of the biggest in Africa</li>
-                <li>Iconic views of Mount Kilimanjaro as your safari backdrop</li>
-                <li>Lions, cheetahs, zebras, wildebeest, giraffes and over 400 bird species</li>
-                <li>Vast open plains offering exceptional year-round game viewing</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>What&rsquo;s Included</h4>
-              <ul class="package-list package-list--included">
-                <li>Amboseli National Park entry fees</li>
-                <li>Private luxury 4&times;4 Land Cruiser with professional English-speaking driver-guide (other languages available)</li>
-                <li>Door-to-door pickup and drop-off from your place of residence in Nairobi</li>
-                <li>2 nights full board accommodation at Ol Tukai Lodge, Amboseli</li>
-                <li>All meals &mdash; breakfast, lunch and dinner throughout</li>
-                <li>2 private game drives per day &mdash; morning and evening</li>
-                <li>Bottled water throughout the journey and game drives</li>
-                <li>All applicable taxes</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>Not Included</h4>
-              <ul class="package-list package-list--excluded">
-                <li>Optional activities and personal excursions</li>
-                <li>Personal expenses &mdash; drinks, laundry, calls</li>
-                <li>Tips and gratuities</li>
-                <li>Travel insurance</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>Ideal For</h4>
-              <ul class="package-tags">
-                <li>Couples &amp; Honeymooners</li>
-                <li>Families</li>
-                <li>Solo Travellers</li>
-                <li>Groups</li>
-                <li>Wildlife Enthusiasts</li>
-                <li>Photography Lovers</li>
-              </ul>
-            </div>
-          </div>
-
-          <aside class="package-sidebar">
-            <div class="pricing-card">
-              <h3>Pricing</h3>
-              <p class="pricing-card__note">Price per person (USD)</p>
-              <table class="pricing-table">
-                <thead>
-                  <tr>
-                    <th>Group Size</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2 Persons</td>
-                    <td>$1,412</td>
-                  </tr>
-                  <tr>
-                    <td>4 Persons</td>
-                    <td>$1,210</td>
-                  </tr>
-                  <tr>
-                    <td>6+ Persons</td>
-                    <td>$1,143</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="contact.html" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
-              <p class="pricing-card__contact">
-                <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a><br>
-                <a href="tel:+254703112833">+254 703 112 833</a>
-              </p>
-            </div>
-
-            <div class="package-sidebar__search">
-              <p class="package-sidebar__search-label">Find your trip</p>
-              <form class="booking-widget booking-widget--tablet booking-widget--sidebar" action="tours.html" method="get" aria-label="Search packages (coming soon)">
-                <p class="visually-hidden">Booking search — placeholder fields for a future widget.</p>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="amboseli-booking-destination">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"/>
-                    </svg>
-                    <select id="amboseli-booking-destination" class="booking-widget__select" name="destination" disabled>
-                      <option selected>Amboseli</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="amboseli-booking-duration">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M12 8v4.25l2.75 1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <select id="amboseli-booking-duration" class="booking-widget__select" name="duration" disabled>
-                      <option selected>3 Days / 2 Nights</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="amboseli-booking-price">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3" y="6.5" width="18" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M6.5 9.5h.01M17.5 14.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <select id="amboseli-booking-price" class="booking-widget__select" name="price" disabled>
-                      <option selected>From $1,143</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <button type="button" class="btn btn--primary booking-widget__submit" disabled>Search</button>
-              </form>
-              <p class="package-sidebar__search-note">Search and online booking coming soon.</p>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </article>
-
-    <article class="tour-package" id="mombasa" data-tour-id="mombasa" aria-labelledby="mombasa-heading" itemscope itemtype="https://schema.org/TouristTrip">
-      <meta itemprop="name" content="Mombasa Beach Escape">
-      <meta itemprop="description" content="3-day all-inclusive Mombasa beach package at Voyager Beach Resort with SGR travel and Old Town excursion.">
-      <meta itemprop="touristType" content="Beach holiday">
-      <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#mombasa">
-      <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-2.jpg">
-      <span itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
-        <meta itemprop="priceCurrency" content="USD">
-        <meta itemprop="lowPrice" content="799">
-        <meta itemprop="highPrice" content="1020">
-        <meta itemprop="offerCount" content="3">
-      </span>
-      <span itemprop="provider" itemscope itemtype="https://schema.org/TravelAgency">
-        <meta itemprop="name" content="Tropisch Tours and Travel">
-      </span>
-      <div class="container">
-        <header class="tour-package__header">
-          <p class="tour-package__meta">Coastal &middot; All Inclusive</p>
-          <h2 id="mombasa-heading">Mombasa Beach Escape</h2>
-          <p class="tour-package__details">3 Days / 2 Nights &nbsp;|&nbsp; Voyager Beach Resort, Mombasa</p>
-        </header>
-
-        <div class="tour-carousel" data-tour-carousel aria-roledescription="carousel" aria-label="Mombasa gallery">
-          <div class="tour-carousel__viewport">
-            <div class="tour-carousel__track">
-              <div class="tour-carousel__slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 10">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-2.jpg" alt="Infinity pool overlooking the Indian Ocean at a Mombasa beach resort with palm trees and lounge chairs" width="1920" height="1080" fetchpriority="high">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-4.jpg" alt="Sunset over the Indian Ocean with golden light reflecting on the sand at a Mombasa beach" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-5.jpg" alt="Aerial view of white sand beach, turquoise water, and palm-lined coast at Mombasa" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-3.jpg" alt="Beach volleyball on a sand court surrounded by tropical gardens at Voyager Beach Resort, Mombasa" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-6.jpg" alt="Historic light-blue building with ornate balconies in Mombasa Old Town" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="6 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-10-.jpg" alt="Champagne on ice with flutes set on the sand at a Mombasa beach at sunset" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="7 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-9-kids%20club.jpg" alt="Open-air restaurant dining with wicker chairs and candlelit tables at Voyager Beach Resort, Mombasa" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="8 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-14.jpg" alt="Tropical flower bouquet with henna-adorned hands at a celebration in Mombasa" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="9 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-8-kids%20club.jpg" alt="Kids club dance performance on stage at Voyager Beach Resort, Mombasa" width="1920" height="1080" loading="lazy">
-              </div>
-              <div class="tour-carousel__slide" role="group" aria-roledescription="slide" aria-label="10 of 10" aria-hidden="true">
-                <img src="assets/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-7-kids%20club.jpg" alt="Kids club playroom with jungle animal murals and toys at Voyager Beach Resort, Mombasa" width="1920" height="1080" loading="lazy">
-              </div>
-            </div>
-          </div>
-          <div class="tour-carousel__controls">
-            <button type="button" class="tour-carousel__btn tour-carousel__btn--prev" aria-label="Previous image">
-              <span aria-hidden="true">&larr;</span>
-            </button>
-            <div class="tour-carousel__dots" role="tablist" aria-label="Choose slide"></div>
-            <button type="button" class="tour-carousel__btn tour-carousel__btn--next" aria-label="Next image">
-              <span aria-hidden="true">&rarr;</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="package-layout tour-package__body">
-          <div class="package-main">
-            <h3>About This Package</h3>
-            <p>Escape to Kenya&rsquo;s stunning coastline with this all-inclusive Mombasa Beach package. From your first class SGR journey from Nairobi to two nights of beachfront luxury at Voyager Beach Resort, everything is taken care of. Relax on white sandy beaches, explore the historic Mombasa Old Town, and enjoy world-class hospitality &mdash; all in one seamless package.</p>
-
-            <div class="package-block">
-              <h4>What&rsquo;s Included</h4>
-              <ul class="package-list package-list--included">
-                <li>2 nights all-inclusive accommodation at Voyager Beach Resort (per person sharing)</li>
-                <li>All meals &mdash; breakfast, lunch, afternoon tea and dinner</li>
-                <li>First class SGR tickets &mdash; Nairobi to Mombasa and return</li>
-                <li>Private transfers &mdash; residence to SGR station and hotel (both ways)</li>
-                <li>Private comfortable transport around Mombasa</li>
-                <li>Mombasa Old Town guided excursion</li>
-                <li>All applicable taxes</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>Not Included</h4>
-              <ul class="package-list package-list--excluded">
-                <li>Optional excursions and personal activities</li>
-                <li>Personal expenses &mdash; drinks, laundry, calls</li>
-                <li>Tips and gratuities</li>
-                <li>Travel insurance</li>
-              </ul>
-            </div>
-
-            <div class="package-block">
-              <h4>Ideal For</h4>
-              <ul class="package-tags">
-                <li>Couples &amp; Honeymooners</li>
-                <li>Families</li>
-                <li>Solo Travellers</li>
-                <li>Groups</li>
-                <li>Beach Lovers</li>
-                <li>Post-Safari Relaxation</li>
-              </ul>
-            </div>
-          </div>
-
-          <aside class="package-sidebar">
-            <div class="pricing-card">
-              <h3>Pricing</h3>
-              <p class="pricing-card__note">Price per person (USD)</p>
-              <table class="pricing-table">
-                <thead>
-                  <tr>
-                    <th>Group Size</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2 Persons</td>
-                    <td>$1,020</td>
-                  </tr>
-                  <tr>
-                    <td>4 Persons</td>
-                    <td>$847</td>
-                  </tr>
-                  <tr>
-                    <td>6+ Persons</td>
-                    <td>$799</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="contact.html" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
-              <p class="pricing-card__contact">
-                <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a><br>
-                <a href="tel:+254703112833">+254 703 112 833</a>
-              </p>
-            </div>
-
-            <div class="package-sidebar__search">
-              <p class="package-sidebar__search-label">Find your trip</p>
-              <form class="booking-widget booking-widget--tablet booking-widget--sidebar" action="tours.html" method="get" aria-label="Search packages (coming soon)">
-                <p class="visually-hidden">Booking search — placeholder fields for a future widget.</p>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="mombasa-booking-destination">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"/>
-                    </svg>
-                    <select id="mombasa-booking-destination" class="booking-widget__select" name="destination" disabled>
-                      <option selected>Mombasa</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="mombasa-booking-duration">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M12 8v4.25l2.75 1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <select id="mombasa-booking-duration" class="booking-widget__select" name="duration" disabled>
-                      <option selected>3 Days / 2 Nights</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="mombasa-booking-price">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3" y="6.5" width="18" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M6.5 9.5h.01M17.5 14.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <select id="mombasa-booking-price" class="booking-widget__select" name="price" disabled>
-                      <option selected>From $799</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <button type="button" class="btn btn--primary booking-widget__submit" disabled>Search</button>
-              </form>
-              <p class="package-sidebar__search-note">Search and online booking coming soon.</p>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </article>
-
-    <article class="tour-package tour-package--tailor" id="tailor-made" data-tour-id="tailor-made" aria-labelledby="tours-tailor-heading" itemscope itemtype="https://schema.org/Service">
-      <meta itemprop="name" content="Tailor-Made Kenya Safaris &amp; Travel">
-      <meta itemprop="description" content="Custom itineraries for Amboseli, Tsavo, Diani, Zanzibar, and bespoke multi-destination journeys across East Africa.">
-      <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tours.html#tailor-made">
-      <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Custom%20itineraries.jpg">
-      <span itemprop="provider" itemscope itemtype="https://schema.org/TravelAgency">
-        <meta itemprop="name" content="Tropisch Tours and Travel">
-      </span>
-      <div class="container">
-        <header class="tour-package__header">
-          <p class="tour-package__meta">Tailor-Made</p>
-          <h2 id="tours-tailor-heading" class="tour-package__title why-travel__title">
+        <header class="featured-tours__header">
+          <h2 id="tour-packages-heading" class="why-travel__title">
             <span class="why-travel__title-line" aria-hidden="true"></span>
-            Need Something Different?
+            Our Packages
             <span class="why-travel__title-line" aria-hidden="true"></span>
           </h2>
-          <p class="tour-package__details">Custom itineraries designed around your dates, interests, and budget.</p>
         </header>
-        <div class="tour-package__body tour-package__body--tailor">
-          <div class="about-tailor__split">
-            <div class="about-tailor__content">
-              <div class="about-tailor__icon" aria-hidden="true"></div>
-              <p>Amboseli, Tsavo, Diani, Zanzibar, and fully bespoke itineraries &mdash; share your ideas and we will design a private safari, coast escape, or multi-destination journey around your dates, interests, and budget.</p>
-              <a href="contact.html" class="btn btn--primary">How can we help<span class="btn__arrow" aria-hidden="true"> →</span></a>
+        <div class="featured-tours__grid featured-tours__grid--catalog">
+          <a href="tour-maasai-mara.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+            <meta itemprop="name" content="Maasai Mara Wilderness Safari">
+            <meta itemprop="description" content="3-day Maasai Mara safari with game drives, full board accommodation, and private 4x4 transport from Nairobi.">
+            <meta itemprop="touristType" content="Wildlife safari">
+            <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tour-maasai-mara.html">
+            <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/classic-maasai-mara-safari-tour-6.jpg">
+            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="2162">
+              <meta itemprop="availability" content="https://schema.org/InStock">
+            </span>
+            <div class="featured-tour-card__media">
+              <img
+                src="assets/images/classic-maasai-mara-safari-tour-6.jpg"
+                alt="Maasai Mara Wilderness Safari"
+                width="1200"
+                height="900"
+                loading="lazy"
+              >
             </div>
-            <div class="about-tailor__image">
-              <div class="media-frame media-frame--4x3">
-                <img
-                  src="assets/images/Custom%20itineraries.jpg"
-                  alt="Two impala standing in tall grass on a custom safari itinerary"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                >
-              </div>
+            <div class="featured-tour-card__body">
+              <h3>Maasai Mara Wilderness Safari</h3>
+              <p class="featured-tour-card__duration">3 Days / 2 Nights</p>
+              <p class="featured-tour-card__price">From $2,162 per person</p>
+              <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
-          </div>
+          </a>
+          <a href="tour-amboseli.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+            <meta itemprop="name" content="Amboseli Wilderness Safari">
+            <meta itemprop="description" content="3-day Amboseli safari with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 transport from Nairobi.">
+            <meta itemprop="touristType" content="Wildlife safari">
+            <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tour-amboseli.html">
+            <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg">
+            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="1143">
+              <meta itemprop="availability" content="https://schema.org/InStock">
+            </span>
+            <div class="featured-tour-card__media">
+              <img
+                src="assets/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg"
+                alt="Elephants on the Amboseli plains with Mount Kilimanjaro in the distance"
+                width="1200"
+                height="900"
+                loading="lazy"
+              >
+            </div>
+            <div class="featured-tour-card__body">
+              <h3>Amboseli Wilderness Safari</h3>
+              <p class="featured-tour-card__duration">3 Days / 2 Nights</p>
+              <p class="featured-tour-card__price">From $1,143 per person</p>
+              <span class="featured-tour-card__link-text">View package &rarr;</span>
+            </div>
+          </a>
+          <a href="tour-mombasa.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+            <meta itemprop="name" content="Mombasa Beach Escape">
+            <meta itemprop="description" content="3-day all-inclusive Mombasa beach package with SGR travel, Voyager Beach Resort, and Old Town excursion.">
+            <meta itemprop="touristType" content="Beach holiday">
+            <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/tour-mombasa.html">
+            <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/Beach-escapes.jpg">
+            <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta itemprop="priceCurrency" content="USD">
+              <meta itemprop="price" content="799">
+              <meta itemprop="availability" content="https://schema.org/InStock">
+            </span>
+            <div class="featured-tour-card__media">
+              <img
+                src="assets/images/Beach-escapes.jpg"
+                alt="Mombasa Beach Escape"
+                width="1200"
+                height="900"
+                loading="lazy"
+              >
+            </div>
+            <div class="featured-tour-card__body">
+              <h3>Mombasa Beach Escape</h3>
+              <p class="featured-tour-card__duration">3 Days / 2 Nights</p>
+              <p class="featured-tour-card__price">From $799 per person</p>
+              <span class="featured-tour-card__link-text">View package &rarr;</span>
+            </div>
+          </a>
+          <a href="contact.html" class="featured-tour-card" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="Tailor-Made Kenya Safaris &amp; Travel">
+            <meta itemprop="description" content="Custom itineraries designed around your dates, interests, and budget across Kenya and East Africa.">
+            <link itemprop="url" href="https://collingwood-web-design.github.io/tropisch-tours-pages/contact.html">
+            <link itemprop="image" href="https://collingwood-web-design.github.io/tropisch-tours-pages/assets/images/diani-beach-tours-2.jpg">
+            <div class="featured-tour-card__media">
+              <img
+                src="assets/images/diani-beach-tours-2.jpg"
+                alt="Tailor-made Kenya safari and coastal travel"
+                width="1200"
+                height="900"
+                loading="lazy"
+              >
+            </div>
+            <div class="featured-tour-card__body">
+              <h3>Tailor-Made Journeys</h3>
+              <p class="featured-tour-card__duration">Your dates, your way</p>
+              <p class="featured-tour-card__price">Bespoke itineraries</p>
+              <span class="featured-tour-card__link-text">Learn more &rarr;</span>
+            </div>
+          </a>
         </div>
       </div>
-    </article>
+    </section>
 
     <section class="section home-journey-cta" aria-labelledby="tours-cta-heading">
       <div class="home-journey-cta__media" aria-hidden="true">
@@ -952,7 +355,21 @@
     </div>
   </footer>
 
+  <script>
+  (function () {
+    var redirects = {
+      "maasai-mara": "tour-maasai-mara.html",
+      "amboseli": "tour-amboseli.html",
+      "mombasa": "tour-mombasa.html",
+      "tailor-made": "contact.html"
+    };
+    var id = location.hash.slice(1);
+    if (redirects[id]) {
+      location.replace(redirects[id]);
+    }
+  })();
+  </script>
   <script src="js/framework.js?v=4"></script>
-  <script src="js/pages.js?v=5"></script>
+  <script src="js/pages.js?v=6"></script>
 </body>
 </html>
