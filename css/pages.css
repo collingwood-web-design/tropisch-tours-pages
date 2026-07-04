@@ -2766,7 +2766,14 @@
   margin-bottom: 0;
 }
 
-.hero__content .section-divider,
+.hero__content .section-divider {
+  justify-content: flex-start;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .home-journey-cta .section-divider,
 :is(.tours-intro, .contact-intro) .section-divider {
   margin-top: var(--space-sm);
