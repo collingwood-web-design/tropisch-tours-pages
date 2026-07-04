@@ -98,7 +98,7 @@
 
 .hero__lead {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.65;
   margin-bottom: var(--space-lg);
   max-width: 26rem;
@@ -136,7 +136,7 @@
 
 .hero--short .hero__content p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   margin-bottom: var(--space-lg);
   max-width: 560px;
   margin-left: auto;
@@ -857,13 +857,22 @@
 .page-hero--about .page-hero__lead-secondary {
   margin-top: calc(var(--space-sm) * -0.25);
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.06rem;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.88);
   max-width: 28rem;
 }
 
-/* —— Home Instagram feed placeholder —— */
+/* —— Home Instagram feed —— */
+.home-instagram__widget {
+  margin: 0 0 var(--space-md);
+  min-height: 12rem;
+}
+
+.home-instagram__widget .elfsight-app-a97bae10-3ebe-400f-bf04-17ecb02af38f {
+  margin-inline: auto;
+}
+
 .home-instagram__feed {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2407,7 +2416,7 @@
 
 :is(.tours-intro, .contact-intro) :is(.tours-intro__lead, .contact-intro__lead) {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.92);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -2415,7 +2424,7 @@
 
 .tours-intro__note {
   margin: var(--space-sm) 0 0;
-  font-size: 0.98rem;
+  font-size: 1.03rem;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.88);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
