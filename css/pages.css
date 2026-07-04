@@ -2701,9 +2701,65 @@
     0 0 20px rgba(0, 0, 0, 0.38);
 }
 
-.contact-intro .section-label {
-  color: var(--color-accent-light);
+.contact-intro .section-label,
+.contact-intro__eyebrow {
+  color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.contact-intro h1 {
+  margin: 0 0 var(--space-xs);
+  font-size: clamp(2.35rem, 5.5vw, 3.5rem);
+}
+
+.contact-intro__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: var(--space-sm) auto var(--space-md);
+}
+
+.contact-intro__divider-line {
+  position: relative;
+  width: clamp(3rem, 8vw, 4.5rem);
+  height: 1px;
+  background-color: var(--color-gold);
+}
+
+.contact-intro__divider-line::before,
+.contact-intro__divider-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: translateY(-50%);
+}
+
+.contact-intro__divider-line::before {
+  left: -1px;
+  border-right: 5px solid var(--color-gold);
+}
+
+.contact-intro__divider-line::after {
+  right: -1px;
+  border-left: 5px solid var(--color-gold);
+}
+
+.contact-intro__divider-diamond {
+  width: 0.42rem;
+  height: 0.42rem;
+  border: 1px solid var(--color-gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.contact-intro .contact-intro__lead {
+  max-width: 34rem;
+  margin-inline: auto;
 }
 
 :is(.tours-intro, .contact-intro) :is(.tours-intro__lead, .contact-intro__lead) {
