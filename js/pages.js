@@ -208,6 +208,15 @@
   /* Contact form handling */
   const contactForm = document.getElementById("contact-form");
   const formMessage = document.querySelector(".form-message");
+  const formMessageText = document.querySelector(".form-message__text");
+
+  function showFormMessage(text, type) {
+    if (!formMessage || !formMessageText) return;
+    formMessageText.textContent = text;
+    formMessage.classList.add("visible");
+    formMessage.classList.toggle("form-message--success", type === "success");
+    formMessage.classList.toggle("form-message--error", type === "error");
+  }
 
   if (contactForm) {
     const captchaCheckbox = contactForm.querySelector("#captcha-mock");
@@ -216,21 +225,17 @@
       e.preventDefault();
 
       if (captchaCheckbox && !captchaCheckbox.checked) {
-        if (formMessage) {
-          formMessage.textContent =
-            "Please confirm you are not a robot before sending your enquiry.";
-          formMessage.classList.add("visible", "form-message--error");
-          formMessage.classList.remove("form-message--success");
-        }
+        showFormMessage(
+          "Please confirm you are not a robot before sending your enquiry.",
+          "error"
+        );
         return;
       }
 
-      if (formMessage) {
-        formMessage.textContent =
-          "Thank you for your enquiry. We will be in touch shortly to help plan your journey.";
-        formMessage.classList.add("visible", "form-message--success");
-        formMessage.classList.remove("form-message--error");
-      }
+      showFormMessage(
+        "Thank you for your enquiry. We will be in touch shortly to help plan your journey.",
+        "success"
+      );
 
       contactForm.reset();
     });
