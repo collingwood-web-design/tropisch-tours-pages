@@ -161,53 +161,53 @@
 
 .hero--home .hero__slide--zebra {
   --hero-pos-x: 48%;
-  --hero-pos-y: 58%;
+  --hero-pos-y: top;
 }
 
 .hero--home .hero__slide--cultural {
   --hero-pos-x: center;
-  --hero-pos-y: 56%;
+  --hero-pos-y: top;
 }
 
 .hero--home .hero__slide--elephant {
   --hero-pos-x: 64%;
-  --hero-pos-y: 50%;
+  --hero-pos-y: top;
 }
 
 .hero--home .hero__slide img {
-  object-position: var(--hero-pos-x, center) var(--hero-pos-y, 58%);
+  object-position: var(--hero-pos-x, center) var(--hero-pos-y, top);
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero--home .hero__slide--zebra {
     --hero-pos-x: 44%;
-    --hero-pos-y: 56%;
+    --hero-pos-y: top;
   }
 
   .hero--home .hero__slide--cultural {
-    --hero-pos-y: 54%;
+    --hero-pos-y: top;
     --hero-pos-x: right;
   }
 
   .hero--home .hero__slide--elephant {
     --hero-pos-x: 68%;
-    --hero-pos-y: 48%;
+    --hero-pos-y: top;
   }
 }
 
 @media (min-width: 1024px) {
   .hero--home .hero__slide--zebra {
     --hero-pos-x: 38%;
-    --hero-pos-y: 54%;
+    --hero-pos-y: top;
   }
 
   .hero--home .hero__slide--cultural {
-    --hero-pos-y: 52%;
+    --hero-pos-y: top;
   }
 
   .hero--home .hero__slide--elephant {
     --hero-pos-x: 72%;
-    --hero-pos-y: 46%;
+    --hero-pos-y: top;
   }
 }
 
@@ -272,16 +272,17 @@
   /* Nudge busy image areas away from the text block on small screens */
   .hero--home .hero__slide--zebra {
     --hero-pos-x: 62%;
-    --hero-pos-y: 50%;
+    --hero-pos-y: top;
   }
 
   .hero--home .hero__slide--cultural {
     --hero-pos-x: right;
-    --hero-pos-y: 55%;
+    --hero-pos-y: top;
   }
 
   .hero--home .hero__slide--elephant {
     --hero-pos-x: 72%;
+    --hero-pos-y: top;
   }
 }
 
