@@ -2105,6 +2105,23 @@
   }
 }
 
+.contact-closing {
+  grid-column: 1 / -1;
+  margin: var(--space-xl) 0 0;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.contact-closing strong {
+  font-weight: 600;
+}
+
 .contact-info__title {
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 3.5vw, 2.35rem);
