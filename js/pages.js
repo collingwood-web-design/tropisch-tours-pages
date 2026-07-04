@@ -210,26 +210,19 @@
   const formMessage = document.querySelector(".form-message");
 
   if (contactForm) {
-    const recaptchaWidget = contactForm.querySelector(".g-recaptcha");
+    const captchaCheckbox = contactForm.querySelector("#captcha-mock");
 
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      if (recaptchaWidget) {
-        const recaptchaResponse =
-          typeof window.grecaptcha !== "undefined"
-            ? window.grecaptcha.getResponse()
-            : "";
-
-        if (!recaptchaResponse) {
-          if (formMessage) {
-            formMessage.textContent =
-              "Please confirm you are not a robot before sending your enquiry.";
-            formMessage.classList.add("visible", "form-message--error");
-            formMessage.classList.remove("form-message--success");
-          }
-          return;
+      if (captchaCheckbox && !captchaCheckbox.checked) {
+        if (formMessage) {
+          formMessage.textContent =
+            "Please confirm you are not a robot before sending your enquiry.";
+          formMessage.classList.add("visible", "form-message--error");
+          formMessage.classList.remove("form-message--success");
         }
+        return;
       }
 
       if (formMessage) {
@@ -240,10 +233,6 @@
       }
 
       contactForm.reset();
-
-      if (typeof window.grecaptcha !== "undefined") {
-        window.grecaptcha.reset();
-      }
     });
   }
 })();

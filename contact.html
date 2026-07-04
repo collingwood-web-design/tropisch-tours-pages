@@ -221,12 +221,25 @@
             </div>
 
             <div class="form-group form-captcha">
-              <!-- Replace data-sitekey with your reCAPTCHA v2 site key from https://www.google.com/recaptcha/admin -->
-              <div
-                class="g-recaptcha"
-                data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                aria-label="I'm not a robot verification"
-              ></div>
+              <!-- GO LIVE: Replace this mock with Google reCAPTCHA v2 — see GO-LIVE.md -->
+              <div class="captcha-mock" role="group" aria-labelledby="captcha-mock-label">
+                <label class="captcha-mock__label" for="captcha-mock">
+                  <input
+                    type="checkbox"
+                    id="captcha-mock"
+                    name="not_robot"
+                    class="captcha-mock__checkbox"
+                  >
+                  <span id="captcha-mock-label" class="captcha-mock__text">I&rsquo;m not a robot</span>
+                </label>
+                <span class="captcha-mock__badge" aria-hidden="true">
+                  <svg class="captcha-mock__icon" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2 4 5v6c0 5.25 3.5 10.15 8 11.35C16.5 21.15 20 16.25 20 11V5l-8-3Z" stroke="currentColor" stroke-width="1.25"/>
+                    <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="captcha-mock__brand">reCAPTCHA</span>
+                </span>
+              </div>
             </div>
 
             <button type="submit" class="btn btn--primary">Send Enquiry</button>
@@ -312,7 +325,6 @@
     </div>
   </footer>
 
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/framework.js"></script>
   <script src="js/pages.js"></script>
 </body>

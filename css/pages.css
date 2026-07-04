@@ -2166,6 +2166,58 @@
   margin-bottom: var(--space-md);
 }
 
+.captcha-mock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  max-width: 19rem;
+  padding: 0.85rem 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.captcha-mock__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--color-text);
+}
+
+.captcha-mock__checkbox {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin: 0;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.captcha-mock__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  color: #9a9a9a;
+  line-height: 1;
+}
+
+.captcha-mock__icon {
+  color: #4285f4;
+}
+
+.captcha-mock__brand {
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
 .form-message {
   padding: var(--space-sm);
   margin-bottom: var(--space-md);
