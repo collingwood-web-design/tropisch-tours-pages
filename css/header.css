@@ -329,15 +329,15 @@
   text-align: center;
 }
 
-.site-header--over-hero:not(.scrolled) .main-nav__cta .btn--primary {
-  background-color: var(--color-white);
-  color: var(--color-primary);
+.main-nav__cta .btn.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border-color: var(--color-primary);
 }
 
-.site-header--over-hero:not(.scrolled) .main-nav__cta .btn--primary:hover {
+.main-nav__cta .btn.btn--primary:hover {
   background-color: var(--color-primary);
-  color: var(--color-on-primary);
+  color: var(--color-accent);
   border-color: var(--color-primary);
 }
 
