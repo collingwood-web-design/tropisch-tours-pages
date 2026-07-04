@@ -819,24 +819,24 @@
 
 .page-hero--about .hero__slide--sundowner {
   --hero-pos-x: center;
-  --hero-pos-y: center;
+  --hero-pos-y: bottom;
 }
 
 .page-hero--about .hero__carousel img {
   transform: none;
-  object-position: var(--hero-pos-x, center) var(--hero-pos-y, center);
+  object-position: var(--hero-pos-x, center) var(--hero-pos-y, bottom);
 }
 
 @media (max-width: 767px) {
   .page-hero--about .hero__slide--sundowner {
     --hero-pos-x: center;
-    --hero-pos-y: center;
+    --hero-pos-y: bottom;
   }
 }
 
 @media (min-width: 1024px) {
   .page-hero--about .hero__slide--sundowner {
-    --hero-pos-y: center;
+    --hero-pos-y: bottom;
   }
 }
 
