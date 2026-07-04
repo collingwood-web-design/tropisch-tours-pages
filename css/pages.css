@@ -869,6 +869,19 @@
   min-height: 12rem;
 }
 
+.home-instagram__widget--full {
+  width: 100%;
+  max-width: none;
+  margin: var(--space-sm) 0 var(--space-md);
+  padding: 0;
+}
+
+.home-instagram__widget--full .elfsight-app-a97bae10-3ebe-400f-bf04-17ecb02af38f,
+.home-instagram__widget--full .elfsight-app-a97bae10-3ebe-400f-bf04-17ecb02af38f iframe {
+  width: 100% !important;
+  max-width: none !important;
+}
+
 .home-instagram__widget .elfsight-app-a97bae10-3ebe-400f-bf04-17ecb02af38f {
   margin-inline: auto;
 }
