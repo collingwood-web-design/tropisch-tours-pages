@@ -2765,6 +2765,22 @@
   flex-shrink: 0;
 }
 
+.page-about .section-divider__line {
+  background-color: var(--color-white);
+}
+
+.page-about .section-divider__line::before {
+  border-right-color: var(--color-white);
+}
+
+.page-about .section-divider__line::after {
+  border-left-color: var(--color-white);
+}
+
+.page-about .section-divider__diamond {
+  border-color: var(--color-white);
+}
+
 .hero__content h1,
 .home-journey-cta__title,
 :is(.tours-intro, .contact-intro) :is(h1, .tours-intro__title) {
