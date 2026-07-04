@@ -220,6 +220,15 @@
               <textarea id="message" name="message" placeholder="Destinations, group size, special interests..." required></textarea>
             </div>
 
+            <div class="form-group form-captcha">
+              <!-- Replace data-sitekey with your reCAPTCHA v2 site key from https://www.google.com/recaptcha/admin -->
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                aria-label="I'm not a robot verification"
+              ></div>
+            </div>
+
             <button type="submit" class="btn btn--primary">Send Enquiry</button>
           </form>
         </div>
@@ -303,6 +312,7 @@
     </div>
   </footer>
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/framework.js"></script>
   <script src="js/pages.js"></script>
 </body>

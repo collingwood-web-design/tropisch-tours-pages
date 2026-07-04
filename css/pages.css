@@ -51,6 +51,7 @@
   height: 100%;
   min-height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -813,24 +814,24 @@
 
 .page-hero--about .hero__slide--sundowner {
   --hero-pos-x: center;
-  --hero-pos-y: 62%;
+  --hero-pos-y: top;
 }
 
 .page-hero--about .hero__carousel img {
   transform: none;
-  object-position: var(--hero-pos-x, center) var(--hero-pos-y, 58%);
+  object-position: var(--hero-pos-x, center) var(--hero-pos-y, top);
 }
 
 @media (max-width: 767px) {
   .page-hero--about .hero__slide--sundowner {
     --hero-pos-x: 58%;
-    --hero-pos-y: 68%;
+    --hero-pos-y: top;
   }
 }
 
 @media (min-width: 1024px) {
   .page-hero--about .hero__slide--sundowner {
-    --hero-pos-y: 60%;
+    --hero-pos-y: top;
   }
 }
 
@@ -1050,6 +1051,10 @@
   object-fit: cover;
   object-position: center;
   border-radius: 0;
+}
+
+.featured-tour-card--focus-top .featured-tour-card__media img {
+  object-position: center top;
 }
 
 .featured-tour-card__body {
@@ -1959,17 +1964,9 @@
 
 .about-tailor__icon {
   width: 4.25rem;
-  height: calc(4.25rem * (352.44 / 300));
+  height: calc(4.25rem * (352.44 / 299.21));
   margin: 0 auto var(--space-md);
-  background-color: var(--color-primary);
-  mask-image: url("../assets/icons/tropish%20small%20logo.svg");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-image: url("../assets/icons/tropish%20small%20logo.svg");
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  background: url("../assets/icons/tropish%20small%20logoabout%20page.svg") center / contain no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -2165,6 +2162,10 @@
   resize: vertical;
 }
 
+.form-captcha {
+  margin-bottom: var(--space-md);
+}
+
 .form-message {
   padding: var(--space-sm);
   margin-bottom: var(--space-md);
@@ -2180,6 +2181,12 @@
   background-color: rgba(30, 58, 47, 0.08);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
+}
+
+.form-message--error {
+  background-color: rgba(139, 58, 58, 0.08);
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
 }
 
 /* —— Tours filter —— */
@@ -2386,7 +2393,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 55%;
+  object-position: center top;
 }
 
 :is(.tours-intro, .contact-intro) :is(.tours-intro__overlay, .contact-intro__overlay) {
@@ -2785,7 +2792,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 .tour-carousel__controls {
@@ -2869,7 +2876,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 .hero--package .hero__overlay {

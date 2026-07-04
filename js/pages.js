@@ -210,16 +210,40 @@
   const formMessage = document.querySelector(".form-message");
 
   if (contactForm) {
+    const recaptchaWidget = contactForm.querySelector(".g-recaptcha");
+
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
+
+      if (recaptchaWidget) {
+        const recaptchaResponse =
+          typeof window.grecaptcha !== "undefined"
+            ? window.grecaptcha.getResponse()
+            : "";
+
+        if (!recaptchaResponse) {
+          if (formMessage) {
+            formMessage.textContent =
+              "Please confirm you are not a robot before sending your enquiry.";
+            formMessage.classList.add("visible", "form-message--error");
+            formMessage.classList.remove("form-message--success");
+          }
+          return;
+        }
+      }
 
       if (formMessage) {
         formMessage.textContent =
           "Thank you for your enquiry. We will be in touch shortly to help plan your journey.";
         formMessage.classList.add("visible", "form-message--success");
+        formMessage.classList.remove("form-message--error");
       }
 
       contactForm.reset();
+
+      if (typeof window.grecaptcha !== "undefined") {
+        window.grecaptcha.reset();
+      }
     });
   }
 })();
