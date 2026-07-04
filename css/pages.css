@@ -984,7 +984,7 @@
 .home-journey-cta__title {
   color: var(--color-white);
   font-weight: 500;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
   text-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -2692,7 +2692,7 @@
 }
 
 :is(.tours-intro, .contact-intro) :is(h1, .tours-intro__title) {
-  margin: 0 0 var(--space-sm);
+  margin: 0;
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.5vw, 2.75rem);
   font-weight: 600;
@@ -2714,7 +2714,8 @@
   font-size: clamp(2.35rem, 5.5vw, 3.5rem);
 }
 
-.contact-intro__divider {
+/* —— Gold section divider (heroes & journey CTAs) —— */
+.section-divider {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2722,15 +2723,15 @@
   margin: var(--space-sm) auto var(--space-md);
 }
 
-.contact-intro__divider-line {
+.section-divider__line {
   position: relative;
   width: clamp(3rem, 8vw, 4.5rem);
   height: 1px;
   background-color: var(--color-gold);
 }
 
-.contact-intro__divider-line::before,
-.contact-intro__divider-line::after {
+.section-divider__line::before,
+.section-divider__line::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -2741,22 +2742,35 @@
   transform: translateY(-50%);
 }
 
-.contact-intro__divider-line::before {
+.section-divider__line::before {
   left: -1px;
   border-right: 5px solid var(--color-gold);
 }
 
-.contact-intro__divider-line::after {
+.section-divider__line::after {
   right: -1px;
   border-left: 5px solid var(--color-gold);
 }
 
-.contact-intro__divider-diamond {
+.section-divider__diamond {
   width: 0.42rem;
   height: 0.42rem;
   border: 1px solid var(--color-gold);
   transform: rotate(45deg);
   flex-shrink: 0;
+}
+
+.hero__content h1,
+.home-journey-cta__title,
+:is(.tours-intro, .contact-intro) :is(h1, .tours-intro__title) {
+  margin-bottom: 0;
+}
+
+.hero__content .section-divider,
+.home-journey-cta .section-divider,
+:is(.tours-intro, .contact-intro) .section-divider {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 .contact-intro .contact-intro__lead {
