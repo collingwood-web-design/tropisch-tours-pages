@@ -764,8 +764,13 @@
 .home-meet-banner__title {
   color: var(--color-white);
   font-weight: 500;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
   text-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
+}
+
+.home-meet-banner .section-divider {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 .home-meet-banner__lead {
