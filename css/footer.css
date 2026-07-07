@@ -170,3 +170,43 @@
 .footer-credit a:hover {
   color: var(--color-white);
 }
+
+/* Elfsight floating chatbot — fixed bubble only, no inline page block */
+.elfsight-floating-chat {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1100;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.elfsight-floating-chat .elfsight-app-86e4c54a-646c-4415-870c-8045bfba485a {
+  position: fixed !important;
+  right: 1.25rem !important;
+  bottom: 1.25rem !important;
+  left: auto !important;
+  top: auto !important;
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  pointer-events: auto;
+}
+
+@media (min-width: 768px) {
+  .elfsight-floating-chat {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .elfsight-floating-chat .elfsight-app-86e4c54a-646c-4415-870c-8045bfba485a {
+    right: 1.5rem !important;
+    bottom: 1.5rem !important;
+  }
+}
