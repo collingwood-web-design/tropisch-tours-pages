@@ -210,3 +210,9 @@
     bottom: 1.5rem !important;
   }
 }
+
+/* Elfsight cookie consent — above header, chatbot, and page content */
+.elfsight-app-41f8c3b6-934c-41dd-b18b-16b8d8a1ad29 {
+  position: relative;
+  z-index: 1200;
+}
