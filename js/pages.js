@@ -14,6 +14,7 @@
     const prevBtn = carousel.querySelector(".tour-carousel__btn--prev");
     const nextBtn = carousel.querySelector(".tour-carousel__btn--next");
     const dotsContainer = carousel.querySelector(".tour-carousel__dots");
+    const autoplay = carousel.dataset.carouselAutoplay !== "false";
     let activeIndex = 0;
     let timerId = null;
 
@@ -49,7 +50,7 @@
     }
 
     function startTimer() {
-      if (tourCarouselReducedMotion) return;
+      if (!autoplay || tourCarouselReducedMotion) return;
       stopTimer();
       timerId = window.setInterval(function () {
         setSlide(activeIndex + 1);
@@ -95,7 +96,7 @@
     startTimer();
 
     document.addEventListener("visibilitychange", function () {
-      if (tourCarouselReducedMotion) return;
+      if (!autoplay || tourCarouselReducedMotion) return;
       if (document.hidden) {
         stopTimer();
       } else {

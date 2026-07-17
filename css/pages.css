@@ -3224,14 +3224,54 @@
   line-height: 1.6;
 }
 
-.hotel-option {
+.hotel-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
   margin-top: var(--space-md);
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--color-border);
 }
 
-.hotel-option:first-of-type {
-  margin-top: var(--space-sm);
+.hotel-option {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(30, 58, 47, 0.08);
+}
+
+.hotel-option__body {
+  flex: 1;
+  padding: var(--space-md);
+}
+
+.hotel-option__carousel .tour-carousel__viewport {
+  aspect-ratio: 16 / 10;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hotel-option__carousel .placeholder-img {
+  line-height: 1.7;
+}
+
+.hotel-option__carousel .tour-carousel__controls {
+  gap: 0.65rem;
+  padding: 0.65rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hotel-option__carousel .tour-carousel__btn {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.85rem;
+}
+
+.hotel-option__carousel .tour-carousel__dot {
+  width: 0.45rem;
+  height: 0.45rem;
 }
 
 .hotel-option__name {
@@ -3250,6 +3290,12 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
+}
+
+@media (max-width: 767px) {
+  .hotel-options-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .package-itinerary {
