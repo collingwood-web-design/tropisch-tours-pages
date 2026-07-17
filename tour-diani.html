@@ -202,7 +202,7 @@
           </div>
         </div>
 
-        <div class="package-layout tour-package__body">
+        <div class="package-layout package-layout--resort tour-package__body">
           <div class="package-main">
             <h3>About This Package</h3>
             <p>Trade the city for the coast on this five-day, four-night escape to Diani Beach, travelling in comfort aboard Kenya&rsquo;s Standard Gauge Railway. Glide past changing landscapes on the way to Mombasa, then unwind on the powder-white sands of the South Coast, where turquoise waters and warm ocean breeze set the pace for a few days of pure relaxation. It&rsquo;s the easiest way to trade routine for reef views — no driving, no stress, just an effortless coastal escape.</p>
@@ -217,7 +217,7 @@
               <p class="package-note">Optional adventures nearby include snorkeling, jet skiing, dolphin tours, and excursions to Wasini Island (at extra cost).</p>
             </div>
 
-            <div class="package-block">
+            <div class="package-block package-block--hotel-options">
               <h4>Hotel Options</h4>
               <p class="package-note">A few of our favourite South Coast stays, spanning a range of styles and budgets — all offering direct beach access and inclusive dining. Rates are per person for 5 days / 4 nights (2026; subject to change).</p>
 
@@ -365,6 +365,100 @@
               <p class="package-note">Ask us about tailoring the itinerary or adding extra nights.</p>
             </div>
 
+            <aside class="package-sidebar package-sidebar--inline">
+              <div class="pricing-card">
+                <h3>Pricing</h3>
+                <p class="pricing-card__note">From price per person (USD) — PrideInn Diani, 6 travellers</p>
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th>From</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Starting at</td>
+                      <td>$2,012</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="pricing-card__note pricing-card__note--tight">Rates vary by resort and group size. Full hotel options are listed on this page.</p>
+                <a href="contact.html" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
+                <p class="pricing-card__contact">
+                  <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a><br>
+                  <a href="tel:+254703112833">+254 703 112 833</a>
+                </p>
+                <p class="pricing-card__currency">Pricing is in USD</p>
+              </div>
+
+              <div class="package-sidebar__search">
+                <p class="package-sidebar__search-label">Find your trip</p>
+                <form class="booking-widget booking-widget--tablet booking-widget--sidebar" action="tours.html" method="get" aria-label="Search packages (coming soon)">
+                  <p class="visually-hidden">Booking search — placeholder fields for a future widget.</p>
+                  <div class="booking-widget__field">
+                    <label class="booking-widget__control" for="diani-booking-destination">
+                      <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"/>
+                      </svg>
+                      <select id="diani-booking-destination" class="booking-widget__select" name="destination" disabled>
+                        <option selected>Diani Beach</option>
+                      </select>
+                      <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="booking-widget__field">
+                    <label class="booking-widget__control" for="diani-booking-dates">
+                      <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <rect x="3.5" y="5.5" width="17" height="15" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 4v3M16 4v3M3.5 10h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                      <select id="diani-booking-dates" class="booking-widget__select" name="dates" disabled>
+                        <option selected>Dates</option>
+                      </select>
+                      <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="booking-widget__field">
+                    <label class="booking-widget__control" for="diani-booking-duration">
+                      <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M12 8v4.25l2.75 1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                      <select id="diani-booking-duration" class="booking-widget__select" name="duration" disabled>
+                        <option selected>5 Days / 4 Nights</option>
+                      </select>
+                      <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="booking-widget__field">
+                    <label class="booking-widget__control" for="diani-booking-price">
+                      <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <rect x="3" y="6.5" width="18" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M6.5 9.5h.01M17.5 14.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                      <select id="diani-booking-price" class="booking-widget__select" name="price" disabled>
+                        <option selected>From $2,012</option>
+                      </select>
+                      <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </label>
+                  </div>
+                  <button type="button" class="btn btn--primary booking-widget__submit" disabled>Search</button>
+                </form>
+                <p class="booking-widget__note">this is a mock up placeholder</p>
+              </div>
+            </aside>
+
             <div class="package-block">
               <h4>Itinerary</h4>
               <ol class="package-itinerary">
@@ -431,100 +525,6 @@
               </ul>
             </div>
           </div>
-
-          <aside class="package-sidebar">
-            <div class="pricing-card">
-              <h3>Pricing</h3>
-              <p class="pricing-card__note">From price per person (USD) — PrideInn Diani, 6 travellers</p>
-              <table class="pricing-table">
-                <thead>
-                  <tr>
-                    <th>From</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Starting at</td>
-                    <td>$2,012</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="pricing-card__note pricing-card__note--tight">Rates vary by resort and group size. Full hotel options are listed on this page.</p>
-              <a href="contact.html" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
-              <p class="pricing-card__contact">
-                <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a><br>
-                <a href="tel:+254703112833">+254 703 112 833</a>
-              </p>
-              <p class="pricing-card__currency">Pricing is in USD</p>
-            </div>
-
-            <div class="package-sidebar__search">
-              <p class="package-sidebar__search-label">Find your trip</p>
-              <form class="booking-widget booking-widget--tablet booking-widget--sidebar" action="tours.html" method="get" aria-label="Search packages (coming soon)">
-                <p class="visually-hidden">Booking search — placeholder fields for a future widget.</p>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="diani-booking-destination">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"/>
-                    </svg>
-                    <select id="diani-booking-destination" class="booking-widget__select" name="destination" disabled>
-                      <option selected>Diani Beach</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="diani-booking-dates">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3.5" y="5.5" width="17" height="15" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M8 4v3M16 4v3M3.5 10h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <select id="diani-booking-dates" class="booking-widget__select" name="dates" disabled>
-                      <option selected>Dates</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="diani-booking-duration">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M12 8v4.25l2.75 1.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <select id="diani-booking-duration" class="booking-widget__select" name="duration" disabled>
-                      <option selected>5 Days / 4 Nights</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <div class="booking-widget__field">
-                  <label class="booking-widget__control" for="diani-booking-price">
-                    <svg class="booking-widget__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <rect x="3" y="6.5" width="18" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
-                      <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
-                      <path d="M6.5 9.5h.01M17.5 14.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <select id="diani-booking-price" class="booking-widget__select" name="price" disabled>
-                      <option selected>From $2,012</option>
-                    </select>
-                    <svg class="booking-widget__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </label>
-                </div>
-                <button type="button" class="btn btn--primary booking-widget__submit" disabled>Search</button>
-              </form>
-              <p class="booking-widget__note">this is a mock up placeholder</p>
-            </div>
-          </aside>
         </div>
       </div>
     </article>

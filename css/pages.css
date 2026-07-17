@@ -2551,6 +2551,18 @@
   }
 }
 
+.package-layout--resort {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.package-layout--resort .package-main > h3,
+.package-layout--resort .package-main > p,
+.package-layout--resort .package-main > .package-block:not(.package-block--hotel-options) {
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
 .package-main h2 {
   margin-bottom: var(--space-md);
 }
@@ -2969,6 +2981,19 @@
   margin-top: var(--space-md);
 }
 
+.package-sidebar--inline {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--space-lg);
+  margin: 0 0 var(--space-xl);
+}
+
+.package-sidebar--inline .package-sidebar__search {
+  min-width: 0;
+  margin-top: 0;
+}
+
 .package-sidebar__search-label {
   margin: 0 0 var(--space-sm);
   font-size: 0.72rem;
@@ -3021,11 +3046,31 @@
     min-width: 0;
     font-size: 0.68rem;
   }
+
+  .package-sidebar--inline .booking-widget--sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .package-sidebar--inline .booking-widget--sidebar .booking-widget__field {
+    border-right: 1px solid var(--color-border);
+  }
+
+  .package-sidebar--inline .booking-widget--sidebar .booking-widget__field:nth-of-type(even) {
+    border-right: none;
+  }
+
+  .package-sidebar--inline .booking-widget--sidebar .booking-widget__submit {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 899px) {
   .package-sidebar .booking-widget--sidebar {
     border-radius: 2rem;
+  }
+
+  .package-sidebar--inline {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3296,6 +3341,7 @@
   .hotel-options-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 .package-itinerary {
