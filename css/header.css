@@ -166,23 +166,18 @@
 .logo__mark {
   display: block;
   height: 4.5rem;
-  width: calc(4.5rem * (600 / 457.25));
+  width: calc(4.5rem * (600 / 490.67));
   max-width: min(320px, 62vw);
-  background-color: currentColor;
-  mask-image: url("../assets/logos/tropisch%20tours%20and%20travel%20logo-white.svg");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-image: url("../assets/logos/tropisch%20tours%20and%20travel%20logo-white.svg");
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  background-image: url("../assets/logos/V2-tropisch%20tours%20and%20travel%20logo-on%20scroll.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
   .logo__mark {
     height: 6.25rem;
-    width: calc(6.25rem * (600 / 457.25));
+    width: calc(6.25rem * (600 / 490.67));
     max-width: 380px;
   }
 }
@@ -190,7 +185,7 @@
 @media (min-width: 1024px) {
   .logo__mark {
     height: 7rem;
-    width: calc(7rem * (600 / 457.25));
+    width: calc(7rem * (600 / 490.67));
     max-width: 420px;
   }
 }
@@ -233,6 +228,10 @@
 
 .site-header--over-hero:not(.scrolled):not(.nav-open) .logo {
   --logo-color: var(--color-white);
+}
+
+.site-header--over-hero:not(.scrolled):not(.nav-open) .logo__mark {
+  background-image: url("../assets/logos/V3-tropisch%20tours%20and%20travel-white-before%20scroll.svg");
 }
 
 .site-header--over-hero:not(.scrolled):not(.nav-open) .main-nav a {

@@ -1989,9 +1989,9 @@
 
 .about-tailor__icon {
   width: 4.25rem;
-  height: calc(4.25rem * (352.44 / 299.21));
+  height: calc(4.25rem * (342.16 / 317.96));
   margin: 0 auto var(--space-md);
-  background: url("../assets/icons/tropish%20small%20logoabout%20page.svg") center / contain no-repeat;
+  background: url("../assets/logos/V2-tropisch%20tours%20and%20travel%20logo-ABOUT%20US%20PAGE.svg") center / contain no-repeat;
 }
 
 @media (min-width: 768px) {
