@@ -11,6 +11,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://collingwood-web-design.github.io/tropisch-tours-pages/tour-masai-mara-flying-safari.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://collingwood-web-design.github.io/tropisch-tours-pages/tour-maasai-mara.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

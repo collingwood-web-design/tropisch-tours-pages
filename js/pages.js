@@ -14,6 +14,7 @@
     const prevBtn = carousel.querySelector(".tour-carousel__btn--prev");
     const nextBtn = carousel.querySelector(".tour-carousel__btn--next");
     const dotsContainer = carousel.querySelector(".tour-carousel__dots");
+    const statusEl = carousel.querySelector(".tour-carousel__status");
     const autoplay = carousel.dataset.carouselAutoplay !== "false";
     let activeIndex = 0;
     let timerId = null;
@@ -22,6 +23,11 @@
       if (prevBtn) prevBtn.hidden = true;
       if (nextBtn) nextBtn.hidden = true;
       return;
+    }
+
+    function updateStatus() {
+      if (!statusEl) return;
+      statusEl.textContent = activeIndex + 1 + " / " + slides.length;
     }
 
     function setSlide(index) {
@@ -33,6 +39,7 @@
       activeIndex = nextIndex;
       slides[activeIndex].classList.add("is-active");
       slides[activeIndex].setAttribute("aria-hidden", "false");
+      updateStatus();
 
       if (dotsContainer) {
         dotsContainer.querySelectorAll(".tour-carousel__dot").forEach(function (dot, i) {
@@ -104,6 +111,117 @@
       }
     });
   });
+
+  /* Hotel gallery lightbox */
+  (function initHotelLightbox() {
+    const triggers = Array.prototype.slice.call(
+      document.querySelectorAll("[data-lightbox-gallery]")
+    );
+    if (!triggers.length) return;
+
+    const galleries = {};
+    triggers.forEach(function (trigger) {
+      const galleryId = trigger.getAttribute("data-lightbox-gallery");
+      if (!galleries[galleryId]) galleries[galleryId] = [];
+      const img = trigger.querySelector("img");
+      galleries[galleryId].push({
+        trigger: trigger,
+        src: img ? img.currentSrc || img.src : trigger.getAttribute("data-lightbox-src"),
+        alt: img ? img.alt : ""
+      });
+    });
+
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("hidden", "");
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.setAttribute("aria-label", "Image gallery");
+    lightbox.innerHTML =
+      '<button type="button" class="lightbox__close" aria-label="Close gallery">&times;</button>' +
+      '<button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Previous image"><span aria-hidden="true">&larr;</span></button>' +
+      '<figure class="lightbox__figure">' +
+      '<img class="lightbox__image" alt="">' +
+      "</figure>" +
+      '<button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Next image"><span aria-hidden="true">&rarr;</span></button>' +
+      '<p class="lightbox__counter" aria-live="polite"></p>';
+    document.body.appendChild(lightbox);
+
+    const imageEl = lightbox.querySelector(".lightbox__image");
+    const counterEl = lightbox.querySelector(".lightbox__counter");
+    const closeBtn = lightbox.querySelector(".lightbox__close");
+    const prevBtn = lightbox.querySelector(".lightbox__nav--prev");
+    const nextBtn = lightbox.querySelector(".lightbox__nav--next");
+
+    let activeGallery = null;
+    let activeIndex = 0;
+    let lastFocus = null;
+
+    function showItem(index) {
+      const items = galleries[activeGallery];
+      if (!items || !items.length) return;
+      activeIndex = (index + items.length) % items.length;
+      const item = items[activeIndex];
+      imageEl.src = item.src;
+      imageEl.alt = "";
+      counterEl.textContent = activeIndex + 1 + " / " + items.length;
+    }
+
+    function openLightbox(galleryId, index) {
+      if (!galleries[galleryId]) return;
+      lastFocus = document.activeElement;
+      activeGallery = galleryId;
+      lightbox.removeAttribute("hidden");
+      document.body.classList.add("lightbox-open");
+      showItem(index);
+      closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.setAttribute("hidden", "");
+      document.body.classList.remove("lightbox-open");
+      imageEl.removeAttribute("src");
+      activeGallery = null;
+      if (lastFocus && typeof lastFocus.focus === "function") {
+        lastFocus.focus();
+      }
+    }
+
+    triggers.forEach(function (trigger) {
+      trigger.addEventListener("click", function () {
+        const galleryId = trigger.getAttribute("data-lightbox-gallery");
+        const items = galleries[galleryId] || [];
+        let index = items.findIndex(function (item) {
+          return item.trigger === trigger;
+        });
+        if (index < 0) index = 0;
+        openLightbox(galleryId, index);
+      });
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+    prevBtn.addEventListener("click", function () {
+      showItem(activeIndex - 1);
+    });
+    nextBtn.addEventListener("click", function () {
+      showItem(activeIndex + 1);
+    });
+
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (lightbox.hasAttribute("hidden")) return;
+      if (event.key === "Escape") {
+        closeLightbox();
+      } else if (event.key === "ArrowLeft") {
+        showItem(activeIndex - 1);
+      } else if (event.key === "ArrowRight") {
+        showItem(activeIndex + 1);
+      }
+    });
+  })();
 
   /* Tour picker — highlight active package on scroll */
   const pickerItems = document.querySelectorAll(".tour-picker__item[data-tour-target]");

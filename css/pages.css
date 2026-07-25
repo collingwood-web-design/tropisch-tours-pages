@@ -1009,6 +1009,10 @@
   object-position: center top;
 }
 
+.home-journey-cta--focus-bottom .home-journey-cta__media img {
+  object-position: center bottom;
+}
+
 @media (min-width: 768px) {
   .home-journey-cta__media img {
     object-position: center 60%;
@@ -1016,6 +1020,10 @@
 
   .home-journey-cta--focus-top .home-journey-cta__media img {
     object-position: center top;
+  }
+
+  .home-journey-cta--focus-bottom .home-journey-cta__media img {
+    object-position: center bottom;
   }
 }
 
@@ -1044,8 +1052,28 @@
 }
 
 .featured-tour-card__media {
+  position: relative;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+}
+
+.featured-tour-card__badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 1;
+  padding: 0.35rem 0.7rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.featured-tour-card--featured {
+  box-shadow: 0 10px 32px rgba(30, 58, 47, 0.16);
 }
 
 .featured-tour-card__media .placeholder-img,
@@ -3215,6 +3243,22 @@
 }
 
 /* —— Tour package carousel —— */
+.package-galleries {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.package-gallery__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  margin: 0 0 var(--space-md);
+  line-height: 1.25;
+}
+
 .tour-carousel {
   position: relative;
 }
@@ -3276,6 +3320,11 @@
   margin-top: var(--space-md);
 }
 
+.hotel-options-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 28rem;
+}
+
 .hotel-option {
   display: flex;
   flex-direction: column;
@@ -3317,6 +3366,163 @@
 .hotel-option__carousel .tour-carousel__dot {
   width: 0.45rem;
   height: 0.45rem;
+}
+
+.hotel-gallery__trigger {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.hotel-gallery__trigger img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.tour-carousel__controls--simple {
+  justify-content: center;
+}
+
+.tour-carousel__status {
+  min-width: 4.5rem;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(12, 24, 18, 0.92);
+}
+
+.lightbox[hidden] {
+  display: none !important;
+}
+
+.lightbox__figure {
+  margin: 0;
+  max-width: min(1120px, 100%);
+  max-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.lightbox__image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 7.5rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.35rem;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox__caption {
+  margin: 0;
+  max-width: 42rem;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lightbox__counter {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.lightbox__close,
+.lightbox__nav {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.lightbox__close:hover,
+.lightbox__nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.lightbox__close {
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  font-size: 1.15rem;
+}
+
+.lightbox__nav--prev {
+  left: 1rem;
+}
+
+.lightbox__nav--next {
+  right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .lightbox {
+    padding: 3.5rem 0.75rem 3rem;
+  }
+
+  .lightbox__nav--prev {
+    left: 0.5rem;
+  }
+
+  .lightbox__nav--next {
+    right: 0.5rem;
+  }
+
+  .lightbox__caption {
+    font-size: 0.8rem;
+    padding-inline: 0.5rem;
+  }
 }
 
 .hotel-option__name {
