@@ -3627,6 +3627,33 @@ body.lightbox-open {
   border: none;
   border-left: 4px solid var(--color-gold);
   scroll-margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 900px) {
+  .package-layout > .package-block--addon {
+    grid-column: 1 / -1;
+  }
+}
+
+.package-block--addon__header > h4 {
+  margin: 0.15rem 0 0;
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+  color: var(--color-primary);
+}
+
+.package-block--addon__gallery {
+  width: 100%;
+  margin: 0;
+}
+
+.package-block--addon__gallery .tour-carousel__viewport {
+  width: 100%;
+}
+
+.package-block--addon__body {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
@@ -3634,17 +3661,8 @@ body.lightbox-open {
 }
 
 @media (min-width: 900px) {
-  .package-layout > .package-block--addon {
-    grid-column: 1 / -1;
-  }
-
-  .package-layout > .package-block--after-addon {
-    grid-column: 1 / -1;
-  }
-
-  .package-block--addon {
+  .package-block--addon__body {
     grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
-    gap: var(--space-xl);
   }
 }
 
