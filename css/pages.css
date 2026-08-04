@@ -964,7 +964,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 62%;
+  object-position: center top;
 }
 
 .home-journey-cta__overlay {
@@ -1015,7 +1015,7 @@
 
 @media (min-width: 768px) {
   .home-journey-cta__media img {
-    object-position: center 60%;
+    object-position: center top;
   }
 
   .home-journey-cta--focus-top .home-journey-cta__media img {
