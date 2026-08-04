@@ -104,6 +104,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://collingwood-web-design.github.io/tropisch-tours-pages/tour-nairobi-wildlife-city-culture.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Nairobi%20Wildlife%20City%20%26%20Culture/Nairobi_City_Wildlife_Cultural_Experience_package-1.jpg</image:loc>
+      <image:title>Nairobi Wildlife, City and Culture Experience</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://collingwood-web-design.github.io/tropisch-tours-pages/about.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
