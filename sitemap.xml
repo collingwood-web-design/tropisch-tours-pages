@@ -124,6 +124,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tropischtours.com/faq.html</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/sundowner.jpg</image:loc>
+      <image:title>Kenya safari FAQ — Tropisch Tours &amp; Travel</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tropischtours.com/contact.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>

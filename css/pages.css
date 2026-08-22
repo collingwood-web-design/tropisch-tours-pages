@@ -528,6 +528,7 @@
   .experience-pathways__header,
   .why-travel__header,
   .home-instagram__header,
+  .home-faq__header,
   .about-section__header
 ) {
   text-align: center;
@@ -559,6 +560,7 @@
     .experience-pathways__header,
     .why-travel__header,
     .home-instagram__header,
+    .home-faq__header,
     .about-section__header
   ) {
     margin-bottom: var(--space-sm);
@@ -588,6 +590,7 @@
 .section.why-travel,
 .section.featured-tours,
 .section.home-instagram,
+.section.home-faq,
 .section.about-story,
 .section.about-services,
 .section.about-tailor,
@@ -610,6 +613,7 @@
   .section.why-travel,
   .section.featured-tours,
   .section.home-instagram,
+  .section.home-faq,
   .section.about-story,
   .section.about-services,
   .section.about-tailor,
@@ -631,6 +635,7 @@
   .section.why-travel,
   .section.featured-tours,
   .section.home-instagram,
+  .section.home-faq,
   .section.about-story,
   .section.about-services,
   .section.about-tailor,
@@ -643,6 +648,7 @@
   .section.why-travel,
   .section.featured-tours,
   .section.home-instagram,
+  .section.home-faq,
   .section.about-story,
   .section.about-services,
   .section.about-tailor,
@@ -660,6 +666,7 @@
     .section.why-travel,
     .section.featured-tours,
     .section.home-instagram,
+    .section.home-faq,
     .section.about-story,
     .section.about-services,
     .section.about-tailor,
@@ -683,6 +690,7 @@
     .section.why-travel,
     .section.featured-tours,
     .section.home-instagram,
+    .section.home-faq,
     .section.about-story,
     .section.about-services,
     .section.about-tailor,
@@ -697,6 +705,7 @@
 :is(
   .home-intro .section-lead,
   .why-travel .section-lead,
+  .home-faq .section-lead,
   .experience-pathways__intro,
   .experience-pathways__intro.section-lead,
   .why-travel__intro .section-lead,
@@ -715,6 +724,7 @@
   :is(
     .home-intro .section-lead,
     .why-travel .section-lead,
+    .home-faq .section-lead,
     .experience-pathways__intro,
     .experience-pathways__intro.section-lead,
     .why-travel__intro .section-lead,
@@ -3885,6 +3895,13 @@ body.lightbox-open {
   margin-top: var(--space-md);
 }
 
+.package-sidebar__faq-btn {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
 .package-tags {
   display: flex;
   flex-wrap: wrap;
@@ -3903,4 +3920,113 @@ body.lightbox-open {
   border: 1px solid var(--color-border);
   border-radius: 999px;
   padding: 0.4rem 0.85rem;
+}
+
+/* FAQ accordion — home + tour detail pages */
+.home-faq__header {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.home-faq__header .section-lead {
+  margin-top: var(--space-xs);
+  margin-bottom: 0;
+}
+
+.faq-accordion {
+  display: grid;
+  gap: var(--space-sm);
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.package-main .faq-accordion {
+  max-width: none;
+  margin-inline: 0;
+}
+
+.faq-accordion__item {
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.faq-accordion__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: 1rem 1.15rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--color-primary);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-accordion__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-accordion__question::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+}
+
+.faq-accordion__item[open] .faq-accordion__question::after {
+  content: "−";
+}
+
+.faq-accordion__answer {
+  padding: 0 1.15rem 1.1rem;
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.faq-accordion__answer p {
+  margin: 0;
+}
+
+.faq-accordion__answer p + p {
+  margin-top: 0.75rem;
+}
+
+.faq-accordion__answer a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.faq-accordion__note {
+  max-width: 48rem;
+  margin: var(--space-md) auto 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.package-main .faq-accordion__note {
+  max-width: none;
+  margin-inline: 0;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .faq-accordion__question {
+    font-size: 1.05rem;
+    padding: 1.1rem 1.35rem;
+  }
+
+  .faq-accordion__answer {
+    padding: 0 1.35rem 1.25rem;
+  }
 }
