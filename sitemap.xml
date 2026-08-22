@@ -8,7 +8,7 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/hero/Welcome%20to%20Tropisch%20Tours%20%26%20Travel-6.jpg</image:loc>
-      <image:title>Tropisch Tours and Travel — Kenya safari home</image:title>
+      <image:title>Tropisch Tours &amp; Travel — Kenya safari home</image:title>
     </image:image>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Masai%20Mara%20Flying%20Safari/The%20annual%20wildebeest%20migration/The%20annual%20wildebeest%20migration-2.jpg</image:loc>
@@ -120,7 +120,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/sundowner.jpg</image:loc>
-      <image:title>About Tropisch Tours and Travel</image:title>
+      <image:title>About Tropisch Tours &amp; Travel</image:title>
     </image:image>
   </url>
   <url>
@@ -130,7 +130,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/hero/Plan-Your-Journey.jpg</image:loc>
-      <image:title>Contact Tropisch Tours and Travel</image:title>
+      <image:title>Contact Tropisch Tours &amp; Travel</image:title>
     </image:image>
   </url>
   <url>

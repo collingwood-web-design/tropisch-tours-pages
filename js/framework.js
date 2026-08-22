@@ -1,5 +1,5 @@
 /**
- * Tropisch Tours and Travel — Site framework
+ * Tropisch Tours &amp; Travel — Site framework
  * Navigation, header behaviour, active links
  */
 

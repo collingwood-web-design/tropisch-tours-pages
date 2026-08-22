@@ -1,5 +1,5 @@
 /**
- * Tropisch Tours and Travel — Page-specific scripts
+ * Tropisch Tours &amp; Travel — Page-specific scripts
  */
 
 (function () {
