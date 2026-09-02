@@ -141,7 +141,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=109">
+  <link rel="stylesheet" href="css/style.css?v=110">
 </head>
 <body itemscope itemtype="https://schema.org/CollectionPage">
 
@@ -488,8 +488,15 @@
       </div>
     </section>
 
-    <section class="section tours-bokun" id="book-online" aria-label="Book safari packages online">
+    <section class="section tours-bokun" id="book-online" aria-labelledby="book-online-heading">
       <div class="container">
+        <header class="tours-bokun__header">
+          <h2 id="book-online-heading" class="why-travel__title">
+            <span class="why-travel__title-line" aria-hidden="true"></span>
+            Book Online
+            <span class="why-travel__title-line" aria-hidden="true"></span>
+          </h2>
+        </header>
         <div class="tours-bokun__widget">
           <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=247561ab-af76-4c1a-8863-975cbe007185" async></script>
           <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/247561ab-af76-4c1a-8863-975cbe007185/product-list/113178"></div>

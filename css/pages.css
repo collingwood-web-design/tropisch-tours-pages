@@ -4037,6 +4037,11 @@ body.lightbox-open {
   background-color: var(--color-bg);
 }
 
+.tours-bokun__header {
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
 .tours-bokun__widget {
   width: 100%;
   max-width: 100%;
@@ -4050,5 +4055,9 @@ body.lightbox-open {
 @media (min-width: 1024px) {
   .section.tours-bokun {
     padding-block: var(--space-lg);
+  }
+
+  .tours-bokun__header {
+    margin-bottom: var(--space-md);
   }
 }
