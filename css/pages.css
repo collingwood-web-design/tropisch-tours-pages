@@ -4030,3 +4030,25 @@ body.lightbox-open {
     padding: 0 1.35rem 1.25rem;
   }
 }
+
+/* —— Tours page Bokun booking widget —— */
+.section.tours-bokun {
+  padding-block: var(--space-md);
+  background-color: var(--color-bg);
+}
+
+.tours-bokun__widget {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tours-bokun .bokunWidget {
+  width: 100%;
+  min-height: 10rem;
+}
+
+@media (min-width: 1024px) {
+  .section.tours-bokun {
+    padding-block: var(--space-lg);
+  }
+}
