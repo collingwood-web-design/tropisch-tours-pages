@@ -16,7 +16,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tours.html</loc>
+    <loc>https://tropischtours.com/tours</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -34,7 +34,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-masai-mara-flying-safari.html</loc>
+    <loc>https://tropischtours.com/tour-masai-mara-flying-safari</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -48,7 +48,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-maasai-mara.html</loc>
+    <loc>https://tropischtours.com/tour-maasai-mara</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -58,7 +58,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-amboseli.html</loc>
+    <loc>https://tropischtours.com/tour-amboseli</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -68,7 +68,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-amboseli-tsavo-taita.html</loc>
+    <loc>https://tropischtours.com/tour-amboseli-tsavo-taita</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -78,7 +78,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-mombasa.html</loc>
+    <loc>https://tropischtours.com/tour-mombasa</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -88,7 +88,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-diani.html</loc>
+    <loc>https://tropischtours.com/tour-diani</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -102,7 +102,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-zanzibar.html</loc>
+    <loc>https://tropischtours.com/tour-zanzibar</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -116,7 +116,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-singapore-malaysia.html</loc>
+    <loc>https://tropischtours.com/tour-singapore-malaysia</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -130,7 +130,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara.html</loc>
+    <loc>https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -140,7 +140,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/tour-nairobi-wildlife-city-culture.html</loc>
+    <loc>https://tropischtours.com/tour-nairobi-wildlife-city-culture</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -150,7 +150,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/about.html</loc>
+    <loc>https://tropischtours.com/about</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -160,7 +160,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/faq.html</loc>
+    <loc>https://tropischtours.com/faq</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -170,7 +170,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/contact.html</loc>
+    <loc>https://tropischtours.com/contact</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -180,13 +180,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tropischtours.com/privacy.html</loc>
+    <loc>https://tropischtours.com/privacy</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://tropischtours.com/terms.html</loc>
+    <loc>https://tropischtours.com/terms</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>

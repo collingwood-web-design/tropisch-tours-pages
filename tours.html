@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1e3a2f">
@@ -10,7 +22,7 @@
   <meta name="author" content="Tropisch Tours &amp; Travel">
   <meta name="geo.region" content="KE-110">
   <meta name="geo.placename" content="Nairobi">
-  <link rel="canonical" href="https://tropischtours.com/tours.html">
+  <link rel="canonical" href="https://tropischtours.com/tours">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="icon" href="favicon.jpg" type="image/jpeg" sizes="any">
   <link rel="apple-touch-icon" href="favicon.jpg">
@@ -19,7 +31,7 @@
   <meta property="og:site_name" content="Tropisch Tours &amp; Travel">
   <meta property="og:title" content="Tour Packages | Kenya, Zanzibar &amp; Asia | Tropisch Tours &amp; Travel">
   <meta property="og:description" content="Explore Maasai Mara, Amboseli, and Kenya beach escapes plus Zanzibar and Singapore &amp; Malaysia packages, with pricing and inclusions from Nairobi.">
-  <meta property="og:url" content="https://tropischtours.com/tours.html">
+  <meta property="og:url" content="https://tropischtours.com/tours">
   <meta property="og:image" content="https://media.cwd-cdn.com/tropisch-tours/hero/tours-page-hero-1.jpg">
   <meta property="og:image:alt" content="Kenya safari, beach, Zanzibar and Asia tour packages">
   <meta property="og:locale" content="en_KE">
@@ -35,8 +47,8 @@
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": "https://tropischtours.com/tours.html#webpage",
-        "url": "https://tropischtours.com/tours.html",
+        "@id": "https://tropischtours.com/tours#webpage",
+        "url": "https://tropischtours.com/tours",
         "name": "Tour Packages | Kenya, Zanzibar & Asia | Tropisch Tours & Travel",
         "description": "Browse Kenya safari and beach packages plus Zanzibar and Singapore & Malaysia Explorer tours from Tropisch Tours & Travel in Nairobi.",
         "inLanguage": "en-KE"
@@ -45,7 +57,7 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tropischtours.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://tropischtours.com/tours.html" }
+          { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://tropischtours.com/tours" }
         ]
       },
       {
@@ -58,7 +70,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Masai Mara Flying Safari",
-              "url": "https://tropischtours.com/tour-masai-mara-flying-safari.html"
+              "url": "https://tropischtours.com/tour-masai-mara-flying-safari"
             }
           },
           {
@@ -67,7 +79,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Maasai Mara Wilderness Safari",
-              "url": "https://tropischtours.com/tour-maasai-mara.html"
+              "url": "https://tropischtours.com/tour-maasai-mara"
             }
           },
           {
@@ -76,7 +88,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Amboseli Wilderness Safari",
-              "url": "https://tropischtours.com/tour-amboseli.html"
+              "url": "https://tropischtours.com/tour-amboseli"
             }
           },
           {
@@ -85,7 +97,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Amboseli · Tsavo West · Taita Hills Safari",
-              "url": "https://tropischtours.com/tour-amboseli-tsavo-taita.html"
+              "url": "https://tropischtours.com/tour-amboseli-tsavo-taita"
             }
           },
           {
@@ -94,7 +106,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Mombasa Beach Escape",
-              "url": "https://tropischtours.com/tour-mombasa.html"
+              "url": "https://tropischtours.com/tour-mombasa"
             }
           },
           {
@@ -103,7 +115,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "5-Day Diani Beach Getaway by SGR",
-              "url": "https://tropischtours.com/tour-diani.html"
+              "url": "https://tropischtours.com/tour-diani"
             }
           },
           {
@@ -112,7 +124,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "6-Day Ol Pejeta, Lake Nakuru & Masai Mara Safari",
-              "url": "https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara.html"
+              "url": "https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara"
             }
           },
           {
@@ -121,7 +133,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Nairobi Wildlife, City & Culture Experience",
-              "url": "https://tropischtours.com/tour-nairobi-wildlife-city-culture.html"
+              "url": "https://tropischtours.com/tour-nairobi-wildlife-city-culture"
             }
           },
           {
@@ -130,7 +142,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Zanzibar Beach Packages",
-              "url": "https://tropischtours.com/tour-zanzibar.html"
+              "url": "https://tropischtours.com/tour-zanzibar"
             }
           },
           {
@@ -139,7 +151,7 @@
             "item": {
               "@type": "TouristTrip",
               "name": "Singapore & Malaysia Explorer",
-              "url": "https://tropischtours.com/tour-singapore-malaysia.html"
+              "url": "https://tropischtours.com/tour-singapore-malaysia"
             }
           },
           {
@@ -148,7 +160,7 @@
             "item": {
               "@type": "Service",
               "name": "Tailor-Made Kenya Safaris & Travel",
-              "url": "https://tropischtours.com/contact.html"
+              "url": "https://tropischtours.com/contact"
             }
           }
         ]
@@ -163,7 +175,7 @@
 </head>
 <body itemscope itemtype="https://schema.org/CollectionPage">
 
-  <meta itemprop="url" content="https://tropischtours.com/tours.html">
+  <meta itemprop="url" content="https://tropischtours.com/tours">
   <meta itemprop="name" content="Tour Packages | Kenya, Zanzibar &amp; Asia | Tropisch Tours &amp; Travel">
   <meta itemprop="description" content="Browse Kenya safari and beach packages plus Zanzibar and Singapore &amp; Malaysia Explorer tours from Tropisch Tours &amp; Travel in Nairobi.">
   <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/hero/tours-page-hero-1.jpg">
@@ -190,11 +202,11 @@
             <span class="header-contact__text">tropischtours@gmail.com</span>
           </a>
         </div>
-        <a href="contact.html" class="header-contact__inquiry">How can we help</a>
+        <a href="contact" class="header-contact__inquiry">How can we help</a>
       </div>
     </div>
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+      <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
         <span class="logo__mark" aria-hidden="true"></span>
       </a>
       <div class="header-end">
@@ -205,23 +217,23 @@
         </button>
         <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html" aria-current="page">Tours</a></li>
-            <li><a href="index.html#destinations">Destinations</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours" aria-current="page">Tours</a></li>
+            <li><a href="./#destinations">Destinations</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
           <div class="main-nav__cta">
-            <a href="contact.html" class="btn btn--primary btn--block">Plan Your Journey</a>
+            <a href="contact" class="btn btn--primary btn--block">Plan Your Journey</a>
           </div>
         <div class="main-nav__contact" aria-label="Contact details">
           <a href="tel:+254703112833">+254 703 112 833</a>
           <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a>
-          <a href="contact.html">How can we help ?</a>
+          <a href="contact">How can we help ?</a>
         </div>
         </nav>
-        <a href="contact.html" class="btn btn--outline-light header-cta">Plan Your Journey</a>
+        <a href="contact" class="btn btn--outline-light header-cta">Plan Your Journey</a>
       </div>
     </div>
   </header>
@@ -249,7 +261,7 @@
         <p class="tours-intro__lead">Curated Kenya safaris, coastal escapes, Zanzibar beach packages, and Singapore &amp; Malaysia journeys — designed with local expertise, comfort, and care.</p>
         <p class="tours-intro__note">Choose a package below for pricing and inclusions, or contact us for a fully custom itinerary.</p>
         <div class="tours-intro__cta">
-          <a href="contact.html" class="btn btn--accent">Plan a Custom Journey<span class="btn__arrow" aria-hidden="true"> →</span></a>
+          <a href="contact" class="btn btn--accent">Plan a Custom Journey<span class="btn__arrow" aria-hidden="true"> →</span></a>
         </div>
       </div>
     </header>
@@ -264,11 +276,11 @@
           </h2>
         </header>
         <div class="featured-tours__grid featured-tours__grid--catalog">
-          <a href="tour-masai-mara-flying-safari.html" class="featured-tour-card featured-tour-card--featured" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-masai-mara-flying-safari" class="featured-tour-card featured-tour-card--featured" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Masai Mara Flying Safari">
             <meta itemprop="description" content="3-day fly-in Masai Mara safari with Sarova Mara Game Camp, migration game drives, Maasai cultural visit, and return domestic flights from Nairobi.">
             <meta itemprop="touristType" content="Wildlife safari">
-            <link itemprop="url" href="https://tropischtours.com/tour-masai-mara-flying-safari.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-masai-mara-flying-safari">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Masai%20Mara%20Flying%20Safari/The%20annual%20wildebeest%20migration/The%20annual%20wildebeest%20migration-2.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -292,11 +304,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-maasai-mara.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-maasai-mara" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Maasai Mara Wilderness Safari">
             <meta itemprop="description" content="3-day Maasai Mara safari with game drives, full board accommodation, and private 4x4 transport from Nairobi.">
             <meta itemprop="touristType" content="Wildlife safari">
-            <link itemprop="url" href="https://tropischtours.com/tour-maasai-mara.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-maasai-mara">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/classic-maasai-mara-safari-tour-6.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -319,11 +331,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-amboseli.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-amboseli" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Amboseli Wilderness Safari">
             <meta itemprop="description" content="3-day Amboseli safari with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 transport from Nairobi.">
             <meta itemprop="touristType" content="Wildlife safari">
-            <link itemprop="url" href="https://tropischtours.com/tour-amboseli.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-amboseli">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -346,11 +358,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-amboseli-tsavo-taita.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-amboseli-tsavo-taita" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Amboseli · Tsavo West · Taita Hills Safari">
             <meta itemprop="description" content="5-day overland safari through Amboseli, Tsavo West, and Taita Hills with private 4x4 and optional North Coast beach extension.">
             <meta itemprop="touristType" content="Wildlife safari">
-            <link itemprop="url" href="https://tropischtours.com/tour-amboseli-tsavo-taita.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-amboseli-tsavo-taita">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20%C2%B7%20Tsavo%20West%20%C2%B7%20Taita%20Hills/Amboseli%20%C2%B7%20Tsavo%20West%20%C2%B7%20Taita%20Hills/AMBOSELI%20-TSAVO%20WEST-TAITA%20HILLS-1.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -373,11 +385,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-mombasa.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-mombasa" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Mombasa Beach Escape">
             <meta itemprop="description" content="3-day all-inclusive Mombasa beach package with SGR travel, Voyager Beach Resort, and Old Town excursion.">
             <meta itemprop="touristType" content="Beach holiday">
-            <link itemprop="url" href="https://tropischtours.com/tour-mombasa.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-mombasa">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Mombasa%20Beach%20Escape/Mombasa%20Beach%20Escape-1.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -400,11 +412,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-diani.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-diani" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="5-Day Diani Beach Getaway by SGR">
             <meta itemprop="description" content="Five-day Diani Beach escape with return SGR rail from Nairobi, Wasini Island / Kisite Marine Park, a sunset dhow cruise, and beachfront resorts from USD 2,149 per person.">
             <meta itemprop="touristType" content="Beach holiday">
-            <link itemprop="url" href="https://tropischtours.com/tour-diani.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-diani">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/5-Day%20Diani%20Beach%20Getaway/5-Day%20Diani%20Beach%20Getaway-10.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -427,11 +439,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-zanzibar.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-zanzibar" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Zanzibar Beach Packages">
             <meta itemprop="description" content="Mid-range Zanzibar beach packages from Nairobi — 4-day escape or 5-day beach and culture with flights, transfers, and resorts from USD 1,342 per person.">
             <meta itemprop="touristType" content="Beach holiday">
-            <link itemprop="url" href="https://tropischtours.com/tour-zanzibar.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-zanzibar">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/ZANZIBAR%20BEACH%20PACKAGES/ZANZIBAR-BEACH-PACKAGES-card.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -454,11 +466,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-singapore-malaysia.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-singapore-malaysia" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Singapore &amp; Malaysia Explorer">
             <meta itemprop="description" content="7-day Singapore and Malaysia Explorer with flights, hotels with breakfast, Universal Studios, Sentosa, Genting Highlands, and Sunway Lagoon from USD 2,166.37 per person.">
             <meta itemprop="touristType" content="City &amp; theme park holiday">
-            <link itemprop="url" href="https://tropischtours.com/tour-singapore-malaysia.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-singapore-malaysia">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Singapore%20%26%20Malaysia%20Explorer/Malaysia/Singapore-Malaysia-Explorer-card.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -481,11 +493,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-ol-pejeta-nakuru-masai-mara.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-ol-pejeta-nakuru-masai-mara" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="6-Day Ol Pejeta, Lake Nakuru &amp; Masai Mara Safari">
             <meta itemprop="description" content="Six-day Kenya wildlife safari across Ol Pejeta, Lake Nakuru, and the Masai Mara with full-board accommodation and private 4x4 transport.">
             <meta itemprop="touristType" content="Wildlife safari">
-            <link itemprop="url" href="https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/6-Day%20Ol%20Pejeta%2C%20Lake%20Nakuru%20%26%20Masai%20Mara%20Safari/ChatGPT%20Image%20Jul%2017%2C%202026%2C%2002_18_20%20PM.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -508,11 +520,11 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="tour-nairobi-wildlife-city-culture.html" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+          <a href="tour-nairobi-wildlife-city-culture" class="featured-tour-card" itemscope itemtype="https://schema.org/TouristTrip">
             <meta itemprop="name" content="Nairobi Wildlife, City &amp; Culture Experience">
             <meta itemprop="description" content="5-day / 4-night family safari and culture itinerary in Nairobi with Argyle Grand, Nairobi National Park, Giraffe Centre, and Sheldrick elephants.">
             <meta itemprop="touristType" content="Family safari and culture">
-            <link itemprop="url" href="https://tropischtours.com/tour-nairobi-wildlife-city-culture.html">
+            <link itemprop="url" href="https://tropischtours.com/tour-nairobi-wildlife-city-culture">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Nairobi%20Wildlife%20City%20%26%20Culture/Nairobi_City_Wildlife_Cultural_Experience_package-1.jpg">
             <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <meta itemprop="priceCurrency" content="USD">
@@ -535,10 +547,10 @@
               <span class="featured-tour-card__link-text">View package &rarr;</span>
             </div>
           </a>
-          <a href="contact.html" class="featured-tour-card" itemscope itemtype="https://schema.org/Service">
+          <a href="contact" class="featured-tour-card" itemscope itemtype="https://schema.org/Service">
             <meta itemprop="name" content="Tailor-Made Kenya Safaris &amp; Travel">
             <meta itemprop="description" content="Custom itineraries designed around your dates, interests, and budget across Kenya and East Africa.">
-            <link itemprop="url" href="https://tropischtours.com/contact.html">
+            <link itemprop="url" href="https://tropischtours.com/contact">
             <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/design%20a%20safari-2.jpg">
             <div class="featured-tour-card__media">
               <img
@@ -596,7 +608,7 @@
           <span class="section-divider__line"></span>
         </div>
         <p class="home-journey-cta__lead">Every journey begins with a conversation. Tell us which package interests you, or let us design something entirely your own.</p>
-        <a href="contact.html" class="btn btn--accent home-journey-cta__btn">Plan Your Journey<span class="btn__arrow" aria-hidden="true"> →</span></a>
+        <a href="contact" class="btn btn--accent home-journey-cta__btn">Plan Your Journey<span class="btn__arrow" aria-hidden="true"> →</span></a>
       </div>
     </section>
 
@@ -616,7 +628,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+          <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
             <img class="footer-logo-img" src="https://media.cwd-cdn.com/tropisch-tours/logos/tropisch%20tours%20and%20travel-white-footer.svg" alt="Tropisch Tours &amp; Travel" width="600" height="148">
           </a>
           <p class="footer-brand__tagline">Nairobi-based safari and travel experts crafting extraordinary global journeys, born from the heart of Africa.</p>
@@ -665,17 +677,17 @@
               </a>
             </li>
           </ul>
-          <p class="footer-brand__legal"><a href="privacy.html">Privacy Policy</a></p>
-          <p class="footer-brand__legal"><a href="terms.html">Terms &amp; Conditions</a></p>
+          <p class="footer-brand__legal"><a href="privacy">Privacy Policy</a></p>
+          <p class="footer-brand__legal"><a href="terms">Terms &amp; Conditions</a></p>
         </div>
         <div class="footer-nav">
           <h4>Explore</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours">Tours</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -695,16 +707,16 @@
   <script>
   (function () {
     var redirects = {
-      "masai-mara-flying-safari": "tour-masai-mara-flying-safari.html",
-      "maasai-mara": "tour-maasai-mara.html",
-      "amboseli": "tour-amboseli.html",
-      "amboseli-tsavo-taita": "tour-amboseli-tsavo-taita.html",
-      "mombasa": "tour-mombasa.html",
-      "diani": "tour-diani.html",
-      "zanzibar": "tour-zanzibar.html",
-      "singapore-malaysia": "tour-singapore-malaysia.html",
-      "ol-pejeta-nakuru-masai-mara": "tour-ol-pejeta-nakuru-masai-mara.html",
-      "tailor-made": "contact.html"
+      "masai-mara-flying-safari": "tour-masai-mara-flying-safari",
+      "maasai-mara": "tour-maasai-mara",
+      "amboseli": "tour-amboseli",
+      "amboseli-tsavo-taita": "tour-amboseli-tsavo-taita",
+      "mombasa": "tour-mombasa",
+      "diani": "tour-diani",
+      "zanzibar": "tour-zanzibar",
+      "singapore-malaysia": "tour-singapore-malaysia",
+      "ol-pejeta-nakuru-masai-mara": "tour-ol-pejeta-nakuru-masai-mara",
+      "tailor-made": "contact"
     };
     var id = location.hash.slice(1);
     if (redirects[id]) {
@@ -717,7 +729,7 @@
   <div class="elfsight-floating-chat" aria-label="Chat with Tropisch Tours &amp; Travel">
     <div class="elfsight-app-86e4c54a-646c-4415-870c-8045bfba485a" data-elfsight-app-lazy></div>
   </div>
-  <script src="js/framework.js?v=4"></script>
+  <script src="js/framework.js?v=5"></script>
   <script src="js/pages.js?v=8"></script>
 </body>
 </html>

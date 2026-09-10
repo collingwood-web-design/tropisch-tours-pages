@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1e3a2f">
@@ -10,7 +22,7 @@
   <meta name="geo.region" content="KE-110">
   <meta name="geo.placename" content="Nairobi">
   <meta name="keywords" content="Tropisch Tours privacy policy, personal data Kenya travel">
-  <link rel="canonical" href="https://tropischtours.com/privacy.html">
+  <link rel="canonical" href="https://tropischtours.com/privacy">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="icon" href="favicon.jpg" type="image/jpeg" sizes="any">
   <link rel="apple-touch-icon" href="favicon.jpg">
@@ -19,7 +31,7 @@
   <meta property="og:site_name" content="Tropisch Tours &amp; Travel">
   <meta property="og:title" content="Privacy Policy | Tropisch Tours &amp; Travel">
   <meta property="og:description" content="How Tropisch Tours &amp; Travel collects, uses, and protects your personal information.">
-  <meta property="og:url" content="https://tropischtours.com/privacy.html">
+  <meta property="og:url" content="https://tropischtours.com/privacy">
   <meta property="og:image" content="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-9.jpg">
   <meta property="og:image:alt" content="Amboseli elephants and Mount Kilimanjaro views in Kenya">
   <meta property="og:locale" content="en_KE">
@@ -37,13 +49,13 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tropischtours.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://tropischtours.com/privacy.html" }
+          { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://tropischtours.com/privacy" }
         ]
       },
       {
         "@type": "WebPage",
-        "@id": "https://tropischtours.com/privacy.html#webpage",
-        "url": "https://tropischtours.com/privacy.html",
+        "@id": "https://tropischtours.com/privacy#webpage",
+        "url": "https://tropischtours.com/privacy",
         "name": "Privacy Policy | Tropisch Tours & Travel",
         "description": "How Tropisch Tours & Travel collects, uses, and protects your personal information.",
         "inLanguage": "en-KE"
@@ -58,7 +70,7 @@
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
 
-  <meta itemprop="url" content="https://tropischtours.com/privacy.html">
+  <meta itemprop="url" content="https://tropischtours.com/privacy">
   <meta itemprop="name" content="Privacy Policy | Tropisch Tours &amp; Travel">
   <meta itemprop="description" content="How Tropisch Tours &amp; Travel collects, uses, and protects your personal information.">
   <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-9.jpg">
@@ -85,11 +97,11 @@
             <span class="header-contact__text">tropischtours@gmail.com</span>
           </a>
         </div>
-        <a href="contact.html" class="header-contact__inquiry">How can we help</a>
+        <a href="contact" class="header-contact__inquiry">How can we help</a>
       </div>
     </div>
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+      <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
         <span class="logo__mark" aria-hidden="true"></span>
       </a>
       <div class="header-end">
@@ -100,23 +112,23 @@
         </button>
         <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="index.html#destinations">Destinations</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours">Tours</a></li>
+            <li><a href="./#destinations">Destinations</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
           <div class="main-nav__cta">
-            <a href="contact.html" class="btn btn--primary btn--block">Plan Your Journey</a>
+            <a href="contact" class="btn btn--primary btn--block">Plan Your Journey</a>
           </div>
         <div class="main-nav__contact" aria-label="Contact details">
           <a href="tel:+254703112833">+254 703 112 833</a>
           <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a>
-          <a href="contact.html">How can we help ?</a>
+          <a href="contact">How can we help ?</a>
         </div>
         </nav>
-        <a href="contact.html" class="btn btn--outline-light header-cta">Plan Your Journey</a>
+        <a href="contact" class="btn btn--outline-light header-cta">Plan Your Journey</a>
       </div>
     </div>
   </header>
@@ -212,7 +224,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+          <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
             <img class="footer-logo-img" src="https://media.cwd-cdn.com/tropisch-tours/logos/tropisch%20tours%20and%20travel-white-footer.svg" alt="Tropisch Tours &amp; Travel" width="600" height="148">
           </a>
           <p class="footer-brand__tagline">Nairobi-based safari and travel experts crafting extraordinary global journeys, born from the heart of Africa.</p>
@@ -260,17 +272,17 @@
               </a>
             </li>
           </ul>
-          <p class="footer-brand__legal"><a href="privacy.html">Privacy Policy</a></p>
-          <p class="footer-brand__legal"><a href="terms.html">Terms &amp; Conditions</a></p>
+          <p class="footer-brand__legal"><a href="privacy">Privacy Policy</a></p>
+          <p class="footer-brand__legal"><a href="terms">Terms &amp; Conditions</a></p>
         </div>
         <div class="footer-nav">
           <h4>Explore</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours">Tours</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -292,6 +304,6 @@
     <div class="elfsight-app-86e4c54a-646c-4415-870c-8045bfba485a" data-elfsight-app-lazy></div>
   </div>
 
-  <script src="js/framework.js?v=4"></script>
+  <script src="js/framework.js?v=5"></script>
 </body>
 </html>

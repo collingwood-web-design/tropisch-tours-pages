@@ -51,10 +51,12 @@
     });
   }
 
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const pathPart = window.location.pathname.replace(/\/+$/, "").split("/").pop() || "";
+  const currentPage = pathPart.replace(/\.html$/i, "") || "";
   document.querySelectorAll(".main-nav a").forEach(function (link) {
-    const href = link.getAttribute("href");
-    if (href === currentPage || (currentPage === "" && href === "index.html")) {
+    const href = (link.getAttribute("href") || "").split("#")[0];
+    const isHome = href === "./" || href === "" || href === "/";
+    if ((currentPage === "" && isHome) || (currentPage && href === currentPage)) {
       link.classList.add("active");
     }
   });

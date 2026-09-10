@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1e3a2f">
@@ -10,7 +22,7 @@
   <meta name="author" content="Tropisch Tours &amp; Travel">
   <meta name="geo.region" content="KE-110">
   <meta name="geo.placename" content="Nairobi">
-  <link rel="canonical" href="https://tropischtours.com/faq.html">
+  <link rel="canonical" href="https://tropischtours.com/faq">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="icon" href="favicon.jpg" type="image/jpeg" sizes="any">
   <link rel="apple-touch-icon" href="favicon.jpg">
@@ -19,7 +31,7 @@
   <meta property="og:site_name" content="Tropisch Tours &amp; Travel">
   <meta property="og:title" content="Travel FAQ | Safari, Zanzibar &amp; Asia | Tropisch Tours &amp; Travel">
   <meta property="og:description" content="Answers about Kenya safari inclusions, Zanzibar beach packages, Singapore &amp; Malaysia tours, costs, and booking with Tropisch Tours &amp; Travel.">
-  <meta property="og:url" content="https://tropischtours.com/faq.html">
+  <meta property="og:url" content="https://tropischtours.com/faq">
   <meta property="og:image" content="https://media.cwd-cdn.com/tropisch-tours/images/sundowner.jpg">
   <meta property="og:image:alt" content="Sundowner overlooking the African savanna at sunset">
   <meta property="og:locale" content="en_KE">
@@ -43,13 +55,13 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tropischtours.com/" },
-          { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://tropischtours.com/faq.html" }
+          { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://tropischtours.com/faq" }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://tropischtours.com/faq.html#webpage",
-        "url": "https://tropischtours.com/faq.html",
+        "@id": "https://tropischtours.com/faq#webpage",
+        "url": "https://tropischtours.com/faq",
         "name": "Travel FAQ | Safari, Zanzibar & Asia | Tropisch Tours & Travel",
         "description": "Travel FAQ covering Kenya safari inclusions, Zanzibar beach packages, Singapore and Malaysia tours, costs, and booking with Tropisch Tours & Travel.",
         "isPartOf": { "@id": "https://tropischtours.com/#website" },
@@ -169,7 +181,7 @@
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
 
-  <meta itemprop="url" content="https://tropischtours.com/faq.html">
+  <meta itemprop="url" content="https://tropischtours.com/faq">
   <meta itemprop="name" content="Travel FAQ | Safari, Zanzibar &amp; Asia | Tropisch Tours &amp; Travel">
   <meta itemprop="description" content="Answers about Kenya safari inclusions, Zanzibar beach packages, Singapore &amp; Malaysia tours, costs, and booking with Tropisch Tours &amp; Travel.">
   <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/sundowner.jpg">
@@ -196,11 +208,11 @@
             <span class="header-contact__text">tropischtours@gmail.com</span>
           </a>
         </div>
-        <a href="contact.html" class="header-contact__inquiry">How can we help</a>
+        <a href="contact" class="header-contact__inquiry">How can we help</a>
       </div>
     </div>
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+      <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
         <span class="logo__mark" aria-hidden="true"></span>
       </a>
       <div class="header-end">
@@ -211,23 +223,23 @@
         </button>
         <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="index.html#destinations">Destinations</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html" aria-current="page">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours">Tours</a></li>
+            <li><a href="./#destinations">Destinations</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq" aria-current="page">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
           <div class="main-nav__cta">
-            <a href="contact.html" class="btn btn--primary btn--block">Plan Your Journey</a>
+            <a href="contact" class="btn btn--primary btn--block">Plan Your Journey</a>
           </div>
         <div class="main-nav__contact" aria-label="Contact details">
           <a href="tel:+254703112833">+254 703 112 833</a>
           <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a>
-          <a href="contact.html">How can we help ?</a>
+          <a href="contact">How can we help ?</a>
         </div>
         </nav>
-        <a href="contact.html" class="btn btn--outline-light header-cta">Plan Your Journey</a>
+        <a href="contact" class="btn btn--outline-light header-cta">Plan Your Journey</a>
       </div>
     </div>
   </header>
@@ -263,7 +275,7 @@
           <details class="faq-accordion__item">
             <summary class="faq-accordion__question">What is included in a Tropisch Tours safari package?</summary>
             <div class="faq-accordion__answer">
-              <p>Most packages include accommodation and meals as specified, a <strong>private 4&times;4 Land Cruiser</strong> with a professional driver-guide, park or reserve entry fees, scheduled game drives, bottled water on drives, and Nairobi pickup and drop-off where stated. Exact inclusions are listed on each <a href="tours.html">tour package</a> page. Visa or eTA fees, travel insurance, tips, and personal expenses are typically excluded.</p>
+              <p>Most packages include accommodation and meals as specified, a <strong>private 4&times;4 Land Cruiser</strong> with a professional driver-guide, park or reserve entry fees, scheduled game drives, bottled water on drives, and Nairobi pickup and drop-off where stated. Exact inclusions are listed on each <a href="tours">tour package</a> page. Visa or eTA fees, travel insurance, tips, and personal expenses are typically excluded.</p>
             </div>
           </details>
           <details class="faq-accordion__item">
@@ -299,19 +311,19 @@
           <details class="faq-accordion__item">
             <summary class="faq-accordion__question">How much does a safari or tour package with Tropisch Tours cost?</summary>
             <div class="faq-accordion__answer">
-              <p>Costs vary by destination, accommodation, group size, and duration. Our package prices are quoted in <strong>USD</strong> and currently range from Kenya beach escapes from about <strong>USD 799</strong> per person, <a href="tour-zanzibar.html">Zanzibar beach packages</a> from about <strong>USD 1,342</strong> per person, multi-day Kenya wildlife safaris from about <strong>USD 1,143</strong> per person, and the <a href="tour-singapore-malaysia.html">Singapore &amp; Malaysia Explorer</a> from <strong>USD 2,166.37</strong> per person. <a href="contact.html">Contact us</a> for a tailored quote based on your dates and preferences.</p>
+              <p>Costs vary by destination, accommodation, group size, and duration. Our package prices are quoted in <strong>USD</strong> and currently range from Kenya beach escapes from about <strong>USD 799</strong> per person, <a href="tour-zanzibar">Zanzibar beach packages</a> from about <strong>USD 1,342</strong> per person, multi-day Kenya wildlife safaris from about <strong>USD 1,143</strong> per person, and the <a href="tour-singapore-malaysia">Singapore &amp; Malaysia Explorer</a> from <strong>USD 2,166.37</strong> per person. <a href="contact">Contact us</a> for a tailored quote based on your dates and preferences.</p>
             </div>
           </details>
           <details class="faq-accordion__item">
             <summary class="faq-accordion__question">Do you offer Zanzibar beach packages from Nairobi?</summary>
             <div class="faq-accordion__answer">
-              <p>Yes. We offer mid-range <a href="tour-zanzibar.html">Zanzibar Beach Packages</a> from Nairobi, including a <strong>4-day escape</strong> and a <strong>5-day beach and culture</strong> option. Packages typically include return flights, airport transfers, accommodation, and selected excursions such as Stone Town and spice farm visits. Full rates and inclusions are listed on the package page.</p>
+              <p>Yes. We offer mid-range <a href="tour-zanzibar">Zanzibar Beach Packages</a> from Nairobi, including a <strong>4-day escape</strong> and a <strong>5-day beach and culture</strong> option. Packages typically include return flights, airport transfers, accommodation, and selected excursions such as Stone Town and spice farm visits. Full rates and inclusions are listed on the package page.</p>
             </div>
           </details>
           <details class="faq-accordion__item">
             <summary class="faq-accordion__question">Do you offer Singapore and Malaysia tour packages?</summary>
             <div class="faq-accordion__answer">
-              <p>Yes. The <a href="tour-singapore-malaysia.html">Singapore &amp; Malaysia Explorer</a> is a <strong>7-day / 6-night</strong> package combining Singapore highlights such as Universal Studios, Sentosa, and Mandai Bird Paradise with Kuala Lumpur, Genting Highlands, Batu Caves, and Sunway Lagoon. It includes return economy flights, hotels with daily breakfast, and private airport transfers. Current package rate is <strong>USD 2,166.37</strong> per person based on a minimum of two travellers.</p>
+              <p>Yes. The <a href="tour-singapore-malaysia">Singapore &amp; Malaysia Explorer</a> is a <strong>7-day / 6-night</strong> package combining Singapore highlights such as Universal Studios, Sentosa, and Mandai Bird Paradise with Kuala Lumpur, Genting Highlands, Batu Caves, and Sunway Lagoon. It includes return economy flights, hotels with daily breakfast, and private airport transfers. Current package rate is <strong>USD 2,166.37</strong> per person based on a minimum of two travellers.</p>
             </div>
           </details>
           <details class="faq-accordion__item">
@@ -323,11 +335,11 @@
           <details class="faq-accordion__item">
             <summary class="faq-accordion__question">Can you arrange accommodation before or after my safari?</summary>
             <div class="faq-accordion__answer">
-              <p>Yes. We can arrange <strong>Nairobi hotel nights</strong> before your safari starts or after you return, as well as beach extensions on the Kenyan coast or <a href="tour-zanzibar.html">Zanzibar</a>, and international add-ons such as <a href="tour-singapore-malaysia.html">Singapore and Malaysia</a>. Tell us your arrival and departure flights and we will build the extra nights into your itinerary.</p>
+              <p>Yes. We can arrange <strong>Nairobi hotel nights</strong> before your safari starts or after you return, as well as beach extensions on the Kenyan coast or <a href="tour-zanzibar">Zanzibar</a>, and international add-ons such as <a href="tour-singapore-malaysia">Singapore and Malaysia</a>. Tell us your arrival and departure flights and we will build the extra nights into your itinerary.</p>
             </div>
           </details>
         </div>
-        <p class="faq-accordion__note">Still have a question? <a href="contact.html">Contact us</a> — we are happy to help plan your safari or international journey.</p>
+        <p class="faq-accordion__note">Still have a question? <a href="contact">Contact us</a> — we are happy to help plan your safari or international journey.</p>
       </div>
     </section>
 
@@ -347,7 +359,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+          <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
             <img class="footer-logo-img" src="https://media.cwd-cdn.com/tropisch-tours/logos/tropisch%20tours%20and%20travel-white-footer.svg" alt="Tropisch Tours &amp; Travel" width="600" height="148">
           </a>
           <p class="footer-brand__tagline">Nairobi-based safari and travel experts crafting extraordinary global journeys, born from the heart of Africa.</p>
@@ -396,17 +408,17 @@
               </a>
             </li>
           </ul>
-          <p class="footer-brand__legal"><a href="privacy.html">Privacy Policy</a></p>
-          <p class="footer-brand__legal"><a href="terms.html">Terms &amp; Conditions</a></p>
+          <p class="footer-brand__legal"><a href="privacy">Privacy Policy</a></p>
+          <p class="footer-brand__legal"><a href="terms">Terms &amp; Conditions</a></p>
         </div>
         <div class="footer-nav">
           <h4>Explore</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours">Tours</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -428,6 +440,6 @@
     <div class="elfsight-app-86e4c54a-646c-4415-870c-8045bfba485a" data-elfsight-app-lazy></div>
   </div>
 
-  <script src="js/framework.js?v=4"></script>
+  <script src="js/framework.js?v=5"></script>
 </body>
 </html>

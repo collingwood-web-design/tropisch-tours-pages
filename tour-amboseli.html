@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1e3a2f">
@@ -10,7 +22,7 @@
   <meta name="author" content="Tropisch Tours &amp; Travel">
   <meta name="geo.region" content="KE-110">
   <meta name="geo.placename" content="Nairobi">
-  <link rel="canonical" href="https://tropischtours.com/tour-amboseli.html">
+  <link rel="canonical" href="https://tropischtours.com/tour-amboseli">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="icon" href="favicon.jpg" type="image/jpeg" sizes="any">
   <link rel="apple-touch-icon" href="favicon.jpg">
@@ -19,7 +31,7 @@
   <meta property="og:site_name" content="Tropisch Tours &amp; Travel">
   <meta property="og:title" content="Amboseli Wilderness Safari | Tropisch Tours &amp; Travel">
   <meta property="og:description" content="3-day Amboseli safari with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 transport from Nairobi.">
-  <meta property="og:url" content="https://tropischtours.com/tour-amboseli.html">
+  <meta property="og:url" content="https://tropischtours.com/tour-amboseli">
   <meta property="og:image" content="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg">
   <meta property="og:image:alt" content="Elephants on the Amboseli plains with Mount Kilimanjaro">
   <meta property="og:locale" content="en_KE">
@@ -37,8 +49,8 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tropischtours.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://tropischtours.com/tours.html" },
-          { "@type": "ListItem", "position": 3, "name": "Amboseli Wilderness Safari", "item": "https://tropischtours.com/tour-amboseli.html" }
+          { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://tropischtours.com/tours" },
+          { "@type": "ListItem", "position": 3, "name": "Amboseli Wilderness Safari", "item": "https://tropischtours.com/tour-amboseli" }
         ]
       },
       {
@@ -48,7 +60,7 @@
         "touristType": "Wildlife safari",
         "duration": "P3D",
         "touristDestination": [{"@type": "Place", "name": "Amboseli National Park", "address": {"@type": "PostalAddress", "addressCountry": "KE"}}],
-        "url": "https://tropischtours.com/tour-amboseli.html",
+        "url": "https://tropischtours.com/tour-amboseli",
         "image": "https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg",
         "provider": {
           "@type": "TravelAgency",
@@ -76,7 +88,7 @@
 
   <meta itemprop="name" content="Amboseli Wilderness Safari | Tropisch Tours &amp; Travel">
   <meta itemprop="description" content="Amboseli Wilderness Safari — 3-day Kenya package from USD 1,143 with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 from Nairobi.">
-  <link itemprop="url" href="https://tropischtours.com/tour-amboseli.html">
+  <link itemprop="url" href="https://tropischtours.com/tour-amboseli">
   <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg">
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -101,11 +113,11 @@
             <span class="header-contact__text">tropischtours@gmail.com</span>
           </a>
         </div>
-        <a href="contact.html" class="header-contact__inquiry">How can we help</a>
+        <a href="contact" class="header-contact__inquiry">How can we help</a>
       </div>
     </div>
     <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+      <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
         <span class="logo__mark" aria-hidden="true"></span>
       </a>
       <div class="header-end">
@@ -116,23 +128,23 @@
         </button>
         <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html" aria-current="page">Tours</a></li>
-            <li><a href="index.html#destinations">Destinations</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours" aria-current="page">Tours</a></li>
+            <li><a href="./#destinations">Destinations</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
           <div class="main-nav__cta">
-            <a href="contact.html" class="btn btn--primary btn--block">Plan Your Journey</a>
+            <a href="contact" class="btn btn--primary btn--block">Plan Your Journey</a>
           </div>
         <div class="main-nav__contact" aria-label="Contact details">
           <a href="tel:+254703112833">+254 703 112 833</a>
           <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a>
-          <a href="contact.html">How can we help ?</a>
+          <a href="contact">How can we help ?</a>
         </div>
         </nav>
-        <a href="contact.html" class="btn btn--outline-light header-cta">Plan Your Journey</a>
+        <a href="contact" class="btn btn--outline-light header-cta">Plan Your Journey</a>
       </div>
     </div>
   </header>
@@ -142,8 +154,8 @@
     <nav class="tour-breadcrumb" aria-label="Breadcrumb">
       <div class="container">
         <ol class="tour-breadcrumb__list">
-          <li class="tour-breadcrumb__item"><a href="index.html">Home</a></li>
-          <li class="tour-breadcrumb__item"><a href="tours.html">Tours</a></li>
+          <li class="tour-breadcrumb__item"><a href="./">Home</a></li>
+          <li class="tour-breadcrumb__item"><a href="tours">Tours</a></li>
           <li class="tour-breadcrumb__item tour-breadcrumb__item--current" aria-current="page">Amboseli Wilderness Safari</li>
         </ol>
       </div>
@@ -153,7 +165,7 @@
       <meta itemprop="duration" content="P3D">
       <meta itemprop="description" content="3-day Amboseli safari with elephant herds, Kilimanjaro views, Ol Tukai Lodge, and private 4x4 transport from Nairobi.">
       <meta itemprop="touristType" content="Wildlife safari">
-      <link itemprop="url" href="https://tropischtours.com/tour-amboseli.html">
+      <link itemprop="url" href="https://tropischtours.com/tour-amboseli">
       <link itemprop="image" href="https://media.cwd-cdn.com/tropisch-tours/images/Amboseli%20Wilderness%20Safari/Amboseli%20Wilderness%20Safari-tours-3.jpg">
       <span itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
         <meta itemprop="priceCurrency" content="USD">
@@ -308,14 +320,14 @@
                   </tr>
                 </tbody>
               </table>
-              <a href="contact.html" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
+              <a href="contact" class="btn btn--primary package-sidebar__btn">Enquire About This Package</a>
               <p class="pricing-card__contact">
                 <a href="mailto:tropischtours@gmail.com">tropischtours@gmail.com</a><br>
                 <a href="tel:+254703112833">+254 703 112 833</a>
               </p>
               <p class="pricing-card__currency">Prices are in USA dollars (USD)</p>
             </div>
-            <a href="faq.html" class="btn btn--outline package-sidebar__faq-btn">FAQ</a>
+            <a href="faq" class="btn btn--outline package-sidebar__faq-btn">FAQ</a>
           </aside>
         </div>
       </div>
@@ -340,7 +352,7 @@
           <span class="section-divider__line"></span>
         </div>
         <p class="home-journey-cta__lead">Every journey begins with a conversation. Tell us which package interests you, or let us design something entirely your own.</p>
-        <a href="contact.html" class="btn btn--accent home-journey-cta__btn">Plan Your Journey<span class="btn__arrow" aria-hidden="true"> &rarr;</span></a>
+        <a href="contact" class="btn btn--accent home-journey-cta__btn">Plan Your Journey<span class="btn__arrow" aria-hidden="true"> &rarr;</span></a>
       </div>
     </section>
 
@@ -360,7 +372,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
+          <a href="./" class="logo" aria-label="Tropisch Tours &amp; Travel — Home">
             <img class="footer-logo-img" src="https://media.cwd-cdn.com/tropisch-tours/logos/tropisch%20tours%20and%20travel-white-footer.svg" alt="Tropisch Tours &amp; Travel" width="600" height="148">
           </a>
           <p class="footer-brand__tagline">Nairobi-based safari and travel experts crafting extraordinary global journeys, born from the heart of Africa.</p>
@@ -409,17 +421,17 @@
               </a>
             </li>
           </ul>
-          <p class="footer-brand__legal"><a href="privacy.html">Privacy Policy</a></p>
-          <p class="footer-brand__legal"><a href="terms.html">Terms &amp; Conditions</a></p>
+          <p class="footer-brand__legal"><a href="privacy">Privacy Policy</a></p>
+          <p class="footer-brand__legal"><a href="terms">Terms &amp; Conditions</a></p>
         </div>
         <div class="footer-nav">
           <h4>Explore</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="tours">Tours</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -441,7 +453,7 @@
     <div class="elfsight-app-86e4c54a-646c-4415-870c-8045bfba485a" data-elfsight-app-lazy></div>
   </div>
 
-  <script src="js/framework.js?v=4"></script>
+  <script src="js/framework.js?v=5"></script>
   <script src="js/pages.js?v=8"></script>
 </body>
 </html>
