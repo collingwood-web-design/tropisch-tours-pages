@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://tropischtours.com/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,12 +17,12 @@
   </url>
   <url>
     <loc>https://tropischtours.com/tours</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/hero/tours-page-hero-1.jpg</image:loc>
-      <image:title>Kenya safari, beach, Zanzibar and Asia tour packages</image:title>
+      <image:title>Kenya safari, beach, Zanzibar, Dubai and Asia tour packages</image:title>
     </image:image>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/ZANZIBAR%20BEACH%20PACKAGES/ZANZIBAR-BEACH-PACKAGES-card.jpg</image:loc>
@@ -30,7 +30,11 @@
     </image:image>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Singapore%20%26%20Malaysia%20Explorer/Malaysia/Singapore-Malaysia-Explorer-card.jpg</image:loc>
-      <image:title>Singapore &amp; Malaysia Explorer</image:title>
+      <image:title>Malaysia &amp; Singapore Sensation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/DUBAI%20FAMILY%20BEACHFRONT%20ESCAPE/Tropisch-Tour_card_Dubai-Family-Beachfront-Escape.jpg</image:loc>
+      <image:title>Dubai Family Beachfront Escape</image:title>
     </image:image>
   </url>
   <url>
@@ -117,16 +121,30 @@
   </url>
   <url>
     <loc>https://tropischtours.com/tour-singapore-malaysia</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Singapore%20%26%20Malaysia%20Explorer/Malaysia/Singapore-Malaysia-Explorer-card.jpg</image:loc>
-      <image:title>Singapore &amp; Malaysia Explorer</image:title>
+      <image:title>Malaysia &amp; Singapore Sensation</image:title>
     </image:image>
     <image:image>
       <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Singapore%20%26%20Malaysia%20Explorer/Singapore/Singapore-Malaysia-Explorer-Singapore-1.jpg</image:loc>
-      <image:title>Singapore skyline — Singapore &amp; Malaysia Explorer</image:title>
+      <image:title>Singapore skyline — Malaysia &amp; Singapore Sensation</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tropischtours.com/tour-dubai</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/DUBAI%20FAMILY%20BEACHFRONT%20ESCAPE/Tropisch-Tour_card_Dubai-Family-Beachfront-Escape.jpg</image:loc>
+      <image:title>Dubai Family Beachfront Escape</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/DUBAI%20FAMILY%20BEACHFRONT%20ESCAPE/Tropisch-Dubai-Family-Beachfront-Escape-1.jpg</image:loc>
+      <image:title>Dubai Family Beachfront Escape — Burj Al Arab at sunset</image:title>
     </image:image>
   </url>
   <url>
@@ -151,7 +169,7 @@
   </url>
   <url>
     <loc>https://tropischtours.com/about</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -161,7 +179,7 @@
   </url>
   <url>
     <loc>https://tropischtours.com/faq</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -171,7 +189,7 @@
   </url>
   <url>
     <loc>https://tropischtours.com/contact</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
