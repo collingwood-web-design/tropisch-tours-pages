@@ -148,6 +148,24 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tropischtours.com/tour-nairobi-national-park</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Nairobi%20National%20Park%20Half-Day%20Game%20Drive/Nairobi-National-Park-Half-Day-Game-Drive-tour-card.jpg</image:loc>
+      <image:title>Nairobi National Park Half-Day Game Drive</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Nairobi%20National%20Park%20Half-Day%20Game%20Drive/Nairobi-National-Park-Half-Day-Game-Drive-tour-8.jpg</image:loc>
+      <image:title>Giraffe with Nairobi skyline — Nairobi National Park Half-Day Game Drive</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://media.cwd-cdn.com/tropisch-tours/images/Nairobi%20National%20Park%20Half-Day%20Game%20Drive/Nairobi-National-Park-Half-Day-Game-Drive-tour-1.jpg</image:loc>
+      <image:title>Nairobi National Park Half-Day Game Drive — wildlife on the park track</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tropischtours.com/tour-ol-pejeta-nakuru-masai-mara</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>

@@ -1025,6 +1025,10 @@
   object-position: center top;
 }
 
+.home-journey-cta--focus-center .home-journey-cta__media img {
+  object-position: center center;
+}
+
 .home-journey-cta--focus-bottom .home-journey-cta__media img {
   object-position: center bottom;
 }
@@ -1036,6 +1040,10 @@
 
   .home-journey-cta--focus-top .home-journey-cta__media img {
     object-position: center top;
+  }
+
+  .home-journey-cta--focus-center .home-journey-cta__media img {
+    object-position: center center;
   }
 
   .home-journey-cta--focus-bottom .home-journey-cta__media img {
